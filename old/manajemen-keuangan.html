@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="author" content="flexilecode" />
+    <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
+    <!--! BEGIN: Apps Title-->
+    <title>Aplikasi Pengelolaan Keuangan Sederhana</title>
+    <!--! END:  Apps Title-->
+    <!--! BEGIN: Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!--! END: Favicon-->
+    <!--! BEGIN: Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!--! END: Bootstrap CSS-->
+    <!--! BEGIN: Vendors CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/daterangepicker.min.css" />
+    <!--! END: Vendors CSS-->
+    <!--! BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="docs/assets/fontawesome/css/all.min.css" />
+    <!--! END: Custom CSS-->
+    <!--! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries !-->
+    <!--! WARNING: Respond.js doesn"t work if you view the page via file: !-->
+    <!--[if lt IE 9]>
+			<script src="https:oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https:oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!--! ================================================================ !-->
+    <!--! [Start] Navigation Manu !-->
+    <!--! ================================================================ !-->
+    <nav class="nxl-navigation">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="index.html" class="b-brand">
+                    <!-- ========   change your logo hear   ============ -->
+                    <img src="assets/images/logo/long-logo.png" alt="LOGO" class="logo logo-lg" style="width: 200px; height: 70px;"/>
+                    <img src="assets/images/logo/logo-sm.png" alt="LOGO" class="logo logo-sm" style="width: 70px; height: 70px;"/>
+                </a>
+            </div>
+            <div class="navbar-content">
+                <ul class="nxl-navbar">
+                    <li class="nxl-item nxl-caption">
+                        <label>Menu Utama</label>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="index.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-house"></i></span>
+                            <span class="nxl-mtext">Beranda</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="manajemen-keuangan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-book"></i></span>
+                            <span class="nxl-mtext">Manajemen Keuangan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="katalog-asuransi.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <span class="nxl-mtext">Asuransi & Proteksi</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="katalog-pembiayaan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-money-bill"></i></span>
+                            <span class="nxl-mtext">Katalog Pembiayaan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="artikel.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-regular fa-newspaper"></i></span>
+                            <span class="nxl-mtext">Artikel & Berita</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="program-pemberdayaan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-hand-holding-hand"></i></span>
+                            <span class="nxl-mtext">Program Pemberdayaan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="kesejahteraan-keuangan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-calculator"></i>  </span>
+                            <span class="nxl-mtext">Kesejahteraan Keuangan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <!-- <li class="nxl-item nxl-caption">
+                        <label>Ekstra</label>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="kalkulator-keuangan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-calculator"></i></span>
+                            <span class="nxl-mtext">Kalkulator Keuangan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="sertifikasi.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-certificate"></i></span>
+                            <span class="nxl-mtext">Sertifikasi</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="template-unduh.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-download"></i></span>
+                            <span class="nxl-mtext">Template & Unduhan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--! ================================================================ !-->
+    <!--! [End]  Navigation Manu !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! [Start] Header !-->
+    <!--! ================================================================ !-->
+    <header class="nxl-header">
+        <div class="header-wrapper">
+            <div class="header-left d-flex align-items-center gap-4">
+                <!--! [Start] nxl-head-mobile-toggler !-->
+                <a href="javascript:void(0);" class="nxl-head-mobile-toggler" id="mobile-collapse">
+                    <div class="hamburger hamburger--arrowturn">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </a>
+                <!--! [End] nxl-lavel-mega-menu !-->
+            </div>
+            <!--! [End] Header Left !-->
+            <!--! [Start] Header Right !-->
+            <div class="header-right ms-auto">
+                <div class="d-flex align-items-center">
+                    <div class="dropdown nxl-h-item">
+                        <a href="javascript:void(0);" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside">
+                            <img src="assets/images/general/profile.png" alt="user-image" class="img-fluid user-avtar me-0" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end nxl-h-dropdown nxl-user-dropdown">
+                            <div class="dropdown-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/general/profile.png" alt="user-image" class="img-fluid user-avtar" />
+                                    <div>
+                                        <h6 class="text-dark mb-0">Ridwan Ahmad Sarmud</h6>
+                                        <span class="fs-12 fw-medium text-muted">Sarmud@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="feather-user"></i>
+                                <span>Profile Details</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./auth-login-minimal.html" class="dropdown-item">
+                                <i class="feather-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! [End] Header Right !-->
+        </div>
+    </header>
+    <!--! ================================================================ !-->
+    <!--! [End] Header !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! [Start] Main Content !-->
+    <!--! ================================================================ !-->
+    <main class="nxl-container">
+        <div class="nxl-content">
+            <!-- [ Main Content ] start -->
+            <div class="main-content">
+                <!--! BEGIN: [help-quick-card] !-->
+                <div class="container-lg">
+                    <div class="hstack justify-content-between mb-4">
+                        <div>
+                            <h2 class="mb-1">manajemen Keuangan</h2>
+                            <span class="fs-12 text-muted mb-5">Catat penghasilan dan pengeluaran anda disini.</span>
+                        </div>
+                    </div>
+                    <!-- [Mini Cards] start -->
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-xxl-4 col-md-4">
+                                    <div class="card stretch stretch-full" style="background-color: #41A67E !important; height: 130px;">
+                                        <div class="card-body">
+                                            <div class="hstack justify-content-between">
+                                                <div>
+                                                    <div class="hstack gap-2 mb-2">
+                                                        <h5 style="color: #fff;">RATA-RATA LABA</h5>
+                                                    </div>
+                                                    <h2 style="color: #fff;" class="fw-bolder">Rp <span class="counter">13.450.000</span></h2>
+                                                    <!-- <p class="fs-12 text-muted mb-0">vs last month: <span class="fw-semibold text-dark">$4,563 USD</span></p> -->
+                                                </div>
+                                                <img src="assets/images/icons/line-icon/coin.png" alt="" style="width: 80px; height: 80px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-md-3">
+                                    <div class="card-body border border-dashed border-gray-5 rounded-3 position-relative" style="height: 130px; background-color: #FFF1CA; border-radius: 10px !important;">
+                                        <div class="hstack justify-content-between gap-4">
+                                            <div>
+                                                <h5>Porsi Pengeluaran</h5>
+                                                <div class="fs-12 text-muted"><span class="text-dark fw-bold">Bahan Bakar adalah biaya terbesar</span></div>
+                                            </div>
+                                            <div class="project-progress-1"></div>
+                                        </div>
+                                        <!-- <div class="badge bg-gray-200 text-dark project-mini-card-badge">Updates</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="javascript:void(0);" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#Tambah" style="width: 180px;">
+                                        <i class="feather-plus me-2"></i>
+                                        <span>Tambah Transaksi</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row just">
+                                        <div class="col-md-4">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                                <input type="date" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                                <input type="date" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-primary mb-1" style="width: 100%;">
+                                                        <i class="fa-solid fa-filter"></i>&nbsp;
+                                                        <span>Filter</span>
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-success mb-1" style="width: 100%;">
+                                                        <i class="fa-solid fa-file-csv"></i>&nbsp;&nbsp;
+                                                        <span>CSV</span>
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-danger mb-1" style="width: 100%;">
+                                                        <i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;
+                                                        <span>PDF</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive"  style="min-height: 300px;">
+                                <table class="table table-hover" id="proposalList">
+                                    <thead>
+                                        <tr>
+                                            <th>Tanggal</th>
+                                            <th>Pendapatan</th>
+                                            <th>Biaya</th>
+                                            <th>Laba</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="single-item">
+                                            <td>01-02-2026</td>
+                                            <td>Rp. 22.000.000</td>
+                                            <td>Rp. 5.600.000</td>
+                                            <td class="fw-bold text-dark">Rp. 16.400.000</td>
+                                            <td>
+                                                <div class="hstack gap-2">
+                                                    <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="modal" data-bs-target="#Detail">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="modal" data-bs-target="#Tambah">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </a>
+                                                    <a href="#" class="avatar-text avatar-md" >
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="single-item">
+                                            <td>15-02-2026</td>
+                                            <td>Rp. 15.000.000</td>
+                                            <td>Rp. 4.500.000</td>
+                                            <td class="fw-bold text-dark">Rp. 10.500.000</td>
+                                            <td>
+                                                <div class="hstack gap-2">
+                                                    <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="modal" data-bs-target="#Detail">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="avatar-text avatar-md" data-bs-toggle="modal" data-bs-target="#Tambah">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </a>
+                                                    <a href="#" class="avatar-text avatar-md" >
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0 pagination-common-style">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">8</a></li>
+                                    <li><a href="javascript:void(0);">9</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [Mini Cards] end -->
+                </div>
+                <!--! BEGIN: [topic-category-section] !-->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+        <!-- [ Footer ] start -->
+    </main>
+    <!--! ================================================================ !-->
+    <!--! [End] Main Content !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Tambah Transaksi Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Tambah" tabindex="-1" aria-labelledby="Tambah" aria-hidden="true" data-bs-dismiss="ou" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <div class="modal-header">
+                    <h2 class="d-flex flex-column mb-0">
+                        <span class="fs-18 fw-bold mb-1">Tambah Transaksi</span>
+                        <!-- <small class="d-block fs-11 fw-normal text-muted">Silakan inputkan </small> -->
+                    </h2>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">Tanggal </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Tanggal</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                            <input type="date" class="form-control" id="">
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Jenis transaksi</small></h2>
+                        <select class="form-control" name="jenis-pengeluaran" onChange="getDropDown(this)">
+                            <option selected disabled>Pilih Jenis transaksi</option>
+                            <option value="Usaha">Usaha</option>
+                            <option value="PenghasilanLain">Penghasilan lain</option>
+                            <option value="Harian">Pengeluaran Harian</option>
+                        </select>
+                    </div>
+
+                    <!-- Pengeluaran Usaha Start !-->
+                    <div id="Usaha" style="display: none;">
+
+                        <div class="mb-2 mt-4">
+                            <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan</small></h2>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+
+                        <div class="mb-2 mt-4">
+                            <div class="row">
+                                <div class="col-10">
+                                    <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan Lainnya</small></h2>
+                                    <div class="input-group">
+                                        <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                        <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-danger mt-4">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary mt-2 " style="width: 200px;">
+                            <i class="feather-plus me-2"></i>
+                            <span>Penghasilan Lainnya</span>
+                        </button>
+
+                        <h2><small class="d-block fs-13 fw-bold mb-2 mt-4">Biaya Operasional</small></h2>
+                        <div class="mb-2">
+                            <label for="" class="fw-semibold fs-11">Bahan Bakar: </label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-gas-pump"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-snowflake"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="" class="fw-semibold fs-11">Upah ABK: </label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-people-group"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="" class="fw-semibold fs-11">Biaya Perbaikan: </label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="fw-semibold fs-11">Biaya Sewa: </label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                                <input type="number" class="form-control" id="" placeholder="Input Nominal">
+                            </div>
+                        </div>
+
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Lainnya</small></h2>
+
+                        <div class="row mb-2 align-items-center">
+                            <div class="col-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control mb-2" placeholder="Nama Biaya Lainnya" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Input Nominal" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2 align-items-center">
+                            <div class="col-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control mb-2" placeholder="Nama Biaya Lainnya" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Input Nominal" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-2" style="width: 150px;">
+                            <i class="feather-plus me-2"></i>
+                            <span>Biaya Lainnya</span>
+                        </button>
+                    </div>
+                    <!-- Pengeluaran Usaha End !-->
+
+                    <!-- Pengeluaran Harian Start !-->
+                     <div id="Harian" style="display: none;">
+                        <h2><small class="d-block fs-13 fw-bold mb-2 mt-4">Biaya Harian</small></h2>
+
+                        <div class="row mb-2 align-items-center">
+                            <div class="col-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control mb-2" placeholder="Nama Biaya harian" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Input Nominal" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2 align-items-center">
+                            <div class="col-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control mb-2" placeholder="Nama Biaya Harian" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Input Nominal" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-2" style="width: 150px;">
+                            <i class="feather-plus me-2"></i>
+                            <span>Biaya Harian</span>
+                        </button>
+                     </div>
+                     <!-- Pengeluaran Harian End !-->
+
+                     <!-- Pengeluaran Penghasilan Lainnya Start !-->
+                     <div id="PenghasilanLain" style="display: none;">
+                        <h2><small class="d-block fs-13 fw-bold mb-2 mt-4">Penghasilan Lain</small></h2>
+
+                        <div class="row mb-2 align-items-center">
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control mb-2" placeholder="Nama Penghasilan lain" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Input Nominal" required>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- Pengeluaran Penghasilan Lainnya End !-->
+
+                    <!-- <div class="row mb-2 align-items-center">
+                        <div class="col-lg-4">
+                            <label for="" class="fw-semibold fs-11 fs-11">Tanggal: </label>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                <input type="date" class="form-control" id="">
+                            </div>
+                        </div>
+                    </div> !-->
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-primary">
+                            <span>Simpan</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Tambah Transaksi Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Detail Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Detail" tabindex="-1" aria-labelledby="Detail" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <div class="modal-header">
+                    <h2 class="d-flex flex-column mb-0">
+                        <span class="fs-18 fw-bold mb-1">Detail Transaksi</span>
+                        <!-- <small class="d-block fs-11 fw-normal text-muted">Compose Your Message</small> -->
+                    </h2>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">Tanggal </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Tanggal</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                            <input type="text" class="form-control" id="" value="01/02/2026" readonly>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="20.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan lainnya</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Operasional</small></h2>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bahan Bakar: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-gas-pump"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-snowflake"></i></div>
+                            <input type="text" class="form-control" id="" value="500.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Upah ABK: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-people-group"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Biaya Perbaikan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="fw-semibold fs-11">Biaya Sewa: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="700.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Lainnya</small></h2>
+
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Makan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="300.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bayar Listrik: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="100.000" readonly>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mb-2 align-items-center">
+                        <div class="col-lg-4">
+                            <label for="" class="fw-semibold fs-11 fs-11">Tanggal: </label>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                <input type="date" class="form-control" id="">
+                            </div>
+                        </div>
+                    </div> !-->
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Detail Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! Footer Script !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Vendors JS !-->
+    <script>
+        $('#Tambah').modal({backdrop: 'static', keyboard: false})  
+
+        function getDropDown(sel){
+            hideAll();
+            document.getElementById(sel.options[sel.selectedIndex].value).style.display 
+            = 'block';
+            }
+
+            function hideAll(){
+                document.getElementById("Usaha").style.display = 'none';
+                document.getElementById("Harian").style.display = 'none';
+                document.getElementById("PenghasilanLain").style.display = 'none';
+            }
+    </script>
+    <script src="assets/vendors/js/vendors.min.js"></script>
+    <!-- vendors.min.js {always must need to be top} -->
+    <script src="assets/vendors/js/daterangepicker.min.js"></script>
+    <script src="assets/vendors/js/apexcharts.min.js"></script>
+    <script src="assets/vendors/js/circle-progress.min.js"></script>
+    <!--! END: Vendors JS !-->
+    <!--! BEGIN: Apps Init  !-->
+    <script src="assets/js/common-init.min.js"></script>
+    <script src="assets/js/dashboard-init.min.js"></script>
+    <!--! END: Apps Init !-->
+    <!--! BEGIN: Theme Customizer  !-->
+    <script src="assets/js/theme-customizer-init.min.js"></script>
+    <!--! END: Theme Customizer !-->
+</body>
+
+</html>
