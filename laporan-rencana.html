@@ -113,6 +113,9 @@
                             <h2 class="mb-1">Laporan Rencana Program Kerja</h2>
                             <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p>
                         </div>
+                        <div>
+                            <img src="assets/images/logo/profil.png" alt="">
+                        </div>
                     </div>
 
                     <div class="col-md-4">
@@ -163,13 +166,13 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <!--! BEGIN: [mail-editor-action-left] !-->
                                 <div class="d-flex align-items-center">
-                                    <a href="" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                    <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
                                         <span>Tampilkan Data</span>
-                                    </a>
+                                    </button>
                                     <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
                                         <span>Hapus Filter</span>
                                     </a>
-                                    <button onclick="myFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                    <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
                                         <span>Unduh Excel</span>
                                     </button>
                                 </div>
@@ -239,7 +242,7 @@
                     </div>
 
                     <!-- [Mini Cards] start -->
-                    <div class="card stretch stretch-full">
+                    <div class="card stretch stretch-full" id="Tabel-rencana" style="display: none;">
                         <div class="card-body">
                             <h4 class="mb-4">Daftar Laporan Rencana</h4>
 
@@ -628,28 +631,23 @@
     <!--! ================================================================ !-->
     <!--! BEGIN: Vendors JS !-->
     <script>
-        $('#Tambah').modal({backdrop: 'static', keyboard: false})  
-
-        function getDropDown(sel){
-            hideAll();
-            document.getElementById(sel.options[sel.selectedIndex].value).style.display 
-            = 'block';
-            }
-
-            function hideAll(){
-                document.getElementById("Usaha").style.display = 'none';
-                document.getElementById("Harian").style.display = 'none';
-                document.getElementById("PenghasilanLain").style.display = 'none';
-            }
-
-            function myFunction() {
-            var x = document.getElementById("Tabel-excel");
+        function unduhFunction() {
+        var x = document.getElementById("Tabel-excel");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
                 x.style.display = "none";
             }
+        }
+
+        function tabelFunction() {
+        var x = document.getElementById("Tabel-rencana");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
+        }
     </script>
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->

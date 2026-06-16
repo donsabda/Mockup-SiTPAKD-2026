@@ -110,353 +110,457 @@
                 <div class="container-lg">
                     <div class="hstack justify-content-between mb-4">
                         <div>
-                            <h2 class="mb-1">Laporan Rencana Program Kerja</h2>
-                            <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p>
+                            <h2 class="mb-1">Buat Laporan Rencana Program Kerja</h2>
+                            <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
+                        </div>
+                        <div>
+                            <img src="assets/images/logo/profil.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <a href="buat-laporan-rencana.html" class="btn btn-primary mb-3" style="width: 220px;">
-                            <i class="feather-plus me-2"></i>
-                            <span>Buat Laporan Rencana</span>
-                        </a>
-                    </div>
-
+                    <!--Program kerja 1-->
                     <div class="card stretch stretch-full">
                         <div class="card-body">
-                            <h4 class="mb-4">Filtering</h4>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <!--! BEGIN: [mail-editor-action-left] !-->
+                                <div class="d-flex align-items-center">
+                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #1</div><br>
+                                </div>
+                                <!--! BEGIN: [mail-editor-action-right] !-->
+                                <div class="d-flex align-items-center"></div>
+                            </div>
+
+                            <hr>
+
+                            <h4 class="mb-3">Rincian Program Kerja</h4>
 
                             <div class="row">
-                                <div class="col-md-2">
-                                    <div class="form-group mb-3">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Tahun</label>
                                         <select class="form-control">
-                                            <option selected disabled>Pilih Tahun</option>
+                                            <option selected disabled>-- Pilih Tahun --</option>
                                             <option>2025</option>
                                             <option>2026</option>
                                             <option>2027</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group mb-3">
-                                        <label for="InvoiceLabel" class="form-label">Filter Berdasarkan</label>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tema Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Tema Program kerja">
+                                        <small class="form-text text-muted">Klik dropdown untuk gunakan tema yang pernah dibuat</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Jenis Program Kerja</label>
                                         <select class="form-control">
-                                            <option selected disabled>Pilih Filter</option>
-                                            <option>KR/KOJK</option>
-                                            <option>Provinsi</option>
-                                            <option>TPAKD</option>
+                                            <option selected disabled>-- Pilih Jenis Program kerja --</option>
+                                            <option value="Kpmr">Kredit/Pembiayaan Melawan Rentenir (K/PMR)</option>
+                                            <option value="Simpel">Simpanan Pelajar (SimPel)</option>
+                                            <option value="Lakupandai">Agen Laku Pandai</option>
+                                            <option value="Eki">Ekosistem Keuangan Inklusi (EKI)</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Nama Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Nama Program kerja">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
+                                            <option selected>Konvensional</option>
+                                            <option selected>Syariah</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <div class="form-group mb-3">
-                                        <label for="InvoiceLabel" class="form-label">Filter Berdasarkan</label>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
                                         <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
-                                            <option value="success">Provinsi Papua</option>
-                                            <option value="success">Kabupaten Biak Numfor</option>
+                                            <option selected>Pelajar/Mahasiswa</option>
+                                            <option>UMKM</option>
+                                            <option selected>Masyarakat Umum</option>
+                                            <option>Koperasi</option>
+                                            <option>Petani/Nelayan</option>
+                                            <option>Pekerja Migran</option>
+                                            <option>Penyandang Disabilitas</option>
+                                            <option>Masyarakat 3T</option>
+                                            <option>Aparatur Sipil Negara</option>
+                                            <option>Desa Wisata</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
+                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;"></textarea>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="card stretch stretch-full" style="border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); background-color: #F9FAFB;">
+                                <div class="card-body">
+                                    <div style="border-bottom: 1px solid #1E40AF;">
+                                        <h6 class="mb-2" style="color: #1E40AF;">Pilihan Target (Sesuai Kategori)</h6>
+                                    </div>
+                                    
+                                    <p style="font-size: 12px; font-weight:800; margin-top: 10px;">Centang (☑️) minimal 1 indikator target yang relevan dengan program ini:</p>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Kegiatan (Peningkatan Literasi keuangan)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Kegiatan (Asistensi dan Pendampingan)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Total Debitur
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Jumlah Nominal Pembiayaan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Program kerja 1 End-->
+
+                    <!--Program kerja 2-->
+                    <div class="card stretch stretch-full" id="Tabel-excel" style="display: none;">
+                        <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
                                 <!--! BEGIN: [mail-editor-action-left] !-->
                                 <div class="d-flex align-items-center">
-                                    <a href="" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Tampilkan Data</span>
-                                    </a>
-                                    <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Hapus Filter</span>
-                                    </a>
-                                    <button onclick="myFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Unduh Excel</span>
+                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #2</div><br>
+                                </div>
+                                <!--! BEGIN: [mail-editor-action-right] !-->
+                                <div class="d-flex align-items-center">
+                                    <button onclick="unduhFunction()" class="btn btn-danger">
+                                        <i class="fa-solid fa-trash"></i>&nbsp;
+                                        Hapus
                                     </button>
                                 </div>
-                                <!--! BEGIN: [mail-editor-action-right] !-->
-                                <div class="d-flex align-items-center"></div>
                             </div>
 
-                            <div id="Tabel-excel" style="display: none;">
-                                <hr>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <!--! BEGIN: [mail-editor-action-left] !-->
-                                    <div class="d-flex align-items-center">
-                                        <a href="" class="btn btn-primary" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                            <span>Proses Excel</span>
-                                        </a>
-                                        <a href="" class="btn btn-primary" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                            <span>refresh Tabel</span>
-                                        </a>
+                            <hr>
+
+                            <h4 class="mb-3">Rincian Program Kerja</h4>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Tahun --</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                        </select>
                                     </div>
-                                    <!--! BEGIN: [mail-editor-action-right] !-->
-                                    <div class="d-flex align-items-center"></div>
                                 </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tema Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Tema Program kerja">
+                                        <small class="form-text text-muted">Klik dropdown untuk gunakan tema yang pernah dibuat</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Jenis Program Kerja</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Jenis Program kerja --</option>
+                                            <option value="Kpmr">Kredit/Pembiayaan Melawan Rentenir (K/PMR)</option>
+                                            <option value="Simpel">Simpanan Pelajar (SimPel)</option>
+                                            <option value="Lakupandai">Agen Laku Pandai</option>
+                                            <option value="Eki">Ekosistem Keuangan Inklusi (EKI)</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Nama Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Nama Program kerja">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
+                                            <option selected>Konvensional</option>
+                                            <option selected>Syariah</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
+                                            <option selected>Pelajar/Mahasiswa</option>
+                                            <option>UMKM</option>
+                                            <option selected>Masyarakat Umum</option>
+                                            <option>Koperasi</option>
+                                            <option>Petani/Nelayan</option>
+                                            <option>Pekerja Migran</option>
+                                            <option>Penyandang Disabilitas</option>
+                                            <option>Masyarakat 3T</option>
+                                            <option>Aparatur Sipil Negara</option>
+                                            <option>Desa Wisata</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
+                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <h4 class="mb-2 mt-4">Riwayat Unduh Excel</h4>
+                            <div class="card stretch stretch-full" style="border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); background-color: #F9FAFB;">
+                                <div class="card-body">
+                                    <div style="border-bottom: 1px solid #1E40AF;">
+                                        <h6 class="mb-2" style="color: #1E40AF;">Pilihan Target (Sesuai Kategori)</h6>
+                                    </div>
+                                    
+                                    <p style="font-size: 12px; font-weight:800; margin-top: 10px;">Centang (☑️) minimal 1 indikator target yang relevan dengan program ini:</p>
 
-                                <div class="table-responsive"  style="min-height: 300px;">
-                                    <table class="table table-hover" id="proposalList">
-                                        <thead>
-                                            <tr>
-                                                <th>Tanggal Proses</th>
-                                                <th>Filter Dokumen</th>
-                                                <th>Status</th>
-                                                <th>Aksi</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="single-item">
-                                                <td>15 Juni 2025 16:00 WIB</td>
-                                                <td><b>Tahun:</b> 2024<br><b>TPAKD:</b> Provinsi Papua, Kabupaten Biak Numfor</td>
-                                                <td><div class="badge bg-dark">Pending</div></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <td>15 Juni 2025 16:00 WIB</td>
-                                                <td><b>Tahun:</b> 2024<br><b>TPAKD:</b> Provinsi Papua, Kabupaten Biak Numfor</td>
-                                                <td><div class="badge bg-primary">Dalam Proses</div></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <td>15 Juni 2025 16:00 WIB</td>
-                                                <td><b>Tahun:</b> 2024<br><b>TPAKD:</b> Provinsi Papua, Kabupaten Biak Numfor</td>
-                                                <td><div class="badge bg-success">Selesai</div></td>
-                                                <td><button class="btn btn-success">Unduh Excel</button></td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <td>15 Juni 2025 16:00 WIB</td>
-                                                <td><b>Tahun:</b> 2024<br><b>TPAKD:</b> Provinsi Papua, Kabupaten Biak Numfor</td>
-                                                <td><div class="badge bg-danger">Error</div></td>
-                                                <td><button class="btn btn-light">Proses Ulang</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Kegiatan (Peningkatan Literasi keuangan)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Kegiatan (Asistensi dan Pendampingan)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Total Debitur
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 900;">
+                                                        Jumlah Nominal Pembiayaan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
                         </div>
                     </div>
+                    <!--Program kerja 2 End-->
 
-                    <!-- [Mini Cards] start -->
-                    <div class="card stretch stretch-full">
+                    <!--Tombol Tambah-->
+                    <button onclick="unduhFunction()" class="btn btn-primary" style="width: 100%; border: 2px dashed rgb(147 197 253 / var(--tw-border-opacity, 1)); color: #2563EB; font-weight: 600; font-size: 15px;">
+                        <i class="fa-solid fa-plus"></i>&nbsp;
+                        Tambah Program Kerja Baru
+                    </button>
+                    <!--Tombol Tambah End-->
+
+                    <!--Upload Dokumen-->
+                    <div class="card stretch stretch-full mt-4">
                         <div class="card-body">
-                            <h4 class="mb-4">Daftar Laporan Rencana</h4>
+                            <h4 class="mb-3">Dokumen Pendukung Laporan</h4>
 
-                            <div class="d-flex align-items-center justify-content-between">
-                                <!--! BEGIN: [mail-editor-action-left] !-->
-                                <div class="d-flex align-items-center"></div>
-                                <!--! BEGIN: [mail-editor-action-right] !-->
-                                <div class="d-flex align-items-center">
-                                    <input type="text" class="form-control" placeholder="Cari Data">
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Upload Rencana Kerja (RKPD) / Revisi</label>
+                                        <input type="file" class="form-control" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <label for="InvoiceLabel" class="form-label">Upload Lembar Pengesahan</label>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" style="font-size: 12px; color: #2563EB;">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    Unduh Template
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <input type="file" class="form-control" id="" value="">
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="table-responsive"  style="min-height: 300px;">
-                                <table class="table table-hover" id="proposalList">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama TPAKD</th>
-                                            <th>Versi</th>
-                                            <th>Jumlah Program</th>
-                                            <th>Status</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="single-item">
-                                            <td>1</td>
-                                            <td>Provinsi Papua</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
-                                            <td class="fw-bold text-dark">1 Program</td>
-                                            <td><div class="badge bg-dark">Draft</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <i class="fa-solid fa-pen-to-square"></i>
-                                                                <span>Edit</span>
-                                                            </a>
-                                                        </li>
-                                                        <!-- <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                                <span>Hapus Laporan</span>
-                                                            </a>
-                                                        </li> -->
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="single-item">
-                                            <td>2</td>
-                                            <td>Provinsi Papua</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
-                                            <td class="fw-bold text-dark">2 Program</td>
-                                            <td><div class="badge bg-warning">Menunggu Persetujuan</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <i class="fa-solid fa-rotate"></i>
-                                                                <span>Tarik Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-circle-info"></i>
-                                                                <span>Detail Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="single-item">
-                                            <td>3</td>
-                                            <td>Provinsi Papua</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
-                                            <td class="fw-bold text-dark">2 Program</td>
-                                            <td><div class="badge bg-success">Disetujui</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum">
-                                                                <i class="fa-solid fa-paper-plane"></i>
-                                                                <span>Ajukan Adendum</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-circle-info"></i>
-                                                                <span>Detail Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="single-item">
-                                            <td>4</td>
-                                            <td>Provinsi Papua</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
-                                            <td class="fw-bold text-dark">2 Program</td>
-                                            <td><div class="badge bg-danger">Perlu Revisi</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <i class="fa-solid fa-pen-to-square"></i>
-                                                                <span>Edit</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-circle-info"></i>
-                                                                <span>Detail Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="single-item">
-                                            <td>5</td>
-                                            <td>Kabupaten Biak Numfor</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V1</div></td>
-                                            <td class="fw-bold text-dark">3 Program</td>
-                                            <td><div class="badge bg-success">Disetujui</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum">
-                                                                <i class="fa-solid fa-paper-plane"></i>
-                                                                <span>Ajukan Adendum</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-circle-info"></i>
-                                                                <span>Detail Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="single-item">
-                                            <td>6</td>
-                                            <td>Kabupaten Biak Numfor</td>
-                                            <td><div class="badge bg-gray-200 text-dark">V2 Latest</div></td>
-                                            <td class="fw-bold text-dark">4 Program</td>
-                                            <td><div class="badge bg-warning">Menunggu Persetujuan Adendum</div></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
-                                                        <i class="feather feather-more-horizontal"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <i class="fa-solid fa-arrow-rotate-left"></i>
-                                                                <span>Batal Adendum</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
-                                                                <i class="fa-solid fa-circle-info"></i>
-                                                                <span>Detail Laporan</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <div class="card-footer">
-                                <ul class="list-unstyled d-flex align-items-end gap-2 mb-0 pagination-common-style">
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0);">8</a></li>
-                                    <li><a href="javascript:void(0);">9</a></li>
-                                    <li>
-                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-                    <!-- [Mini Cards] end -->
+                    <!--Upload Dokumen End-->
+
+                    <div class="d-flex align-items-center justify-content-between" style="margin-bottom: 100px;">
+                        <!--! BEGIN: [mail-editor-action-left] !-->
+                        <div class="d-flex align-items-center"></div>
+                        <!--! BEGIN: [mail-editor-action-right] !-->
+                        <div class="d-flex align-items-center">
+                            <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
+                            <button class="btn btn-primary">Simpan dan Kirim</button>
+                        </div>
+                    </div>
+
                 </div>
                 <!--! BEGIN: [topic-category-section] !-->
             </div>
@@ -636,20 +740,29 @@
             = 'block';
             }
 
-            function hideAll(){
-                document.getElementById("Usaha").style.display = 'none';
-                document.getElementById("Harian").style.display = 'none';
-                document.getElementById("PenghasilanLain").style.display = 'none';
-            }
+        function hideAll(){
+            document.getElementById("Usaha").style.display = 'none';
+            document.getElementById("Harian").style.display = 'none';
+            document.getElementById("PenghasilanLain").style.display = 'none';
+        }
 
-            function myFunction() {
-            var x = document.getElementById("Tabel-excel");
+        function unduhFunction() {
+        var x = document.getElementById("Tabel-excel");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
                 x.style.display = "none";
             }
+        }
+
+        function tabelFunction() {
+        var x = document.getElementById("Tabel-rencana");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
+        }
     </script>
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->
