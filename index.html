@@ -21,6 +21,10 @@
     <!--! BEGIN: Vendors CSS-->
     <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/css/daterangepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/datepicker.min.css">
     <!--! END: Vendors CSS-->
     <!--! BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
@@ -41,18 +45,18 @@
     <!--! ================================================================ !-->
     <nav class="nxl-navigation">
         <div class="navbar-wrapper">
-            <div class="m-header">
+            <div class="m-header" style="border-bottom: 0px !important;">
                 <a href="index.html" class="b-brand">
                     <!-- ========   change your logo hear   ============ -->
-                    <!-- <img src="assets/images/logo/long-logo.png" alt="LOGO" class="logo logo-lg" style="width: 200px; height: 70px;"/>
-                    <img src="assets/images/logo/logo-sm.png" alt="LOGO" class="logo logo-sm" style="width: 70px; height: 70px;"/> -->
+                    <img src="assets/images/logo/tpakd.jpg" alt="LOGO" class="logo logo-lg" style="width: 140px; height: 70px; margin-left: 30px; margin-top: 10px;"/>
+                    <img src="assets/images/logo/tpakd.jpg" alt="LOGO" class="logo logo-sm" style="width: 70px; height: 70px;"/>
                 </a>
             </div>
             <div class="navbar-content">
                 <ul class="nxl-navbar">
-                    <li class="nxl-item nxl-caption">
+                    <!-- <li class="nxl-item nxl-caption">
                         <label>Menu Utama</label>
-                    </li>
+                    </li> -->
                     <li class="nxl-item nxl-hasmenu">
                         <a href="index.html" class="nxl-link">
                             <span class="nxl-micon"><i class="fa-solid fa-house"></i></span>
@@ -60,20 +64,32 @@
                         </a>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
+                        <a href="#" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-link"></i></span>
+                            <span class="nxl-mtext">Laporan Pembentukan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
                         <a href="laporan-rencana.html" class="nxl-link">
-                            <span class="nxl-micon"><i class="fa-solid fa-book"></i></span>
+                            <span class="nxl-micon"><i class="fa-solid fa-file-pen"></i></span>
                             <span class="nxl-mtext">Laporan Rencana</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
+                        <a href="laporan-realisasi.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-file-pen"></i></span>
+                            <span class="nxl-mtext">Laporan Realisasi</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
                         <a href="konsolidasi.html" class="nxl-link">
-                            <span class="nxl-micon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <span class="nxl-micon"><i class="fa-solid fa-chart-column"></i></span>
                             <span class="nxl-mtext">Agregasi dan Konsolidasi</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="laporan.tahunan.html" class="nxl-link">
-                            <span class="nxl-micon"><i class="fa-solid fa-money-bill"></i></span>
+                            <span class="nxl-micon"><i class="fa-regular fa-calendar"></i></span>
                             <span class="nxl-mtext">Laporan Tahunan</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
@@ -93,109 +109,290 @@
             <div class="main-content">
                 <!--! BEGIN: [help-quick-card] !-->
                 <div class="container-lg">
-                    <div class="card stretch stretch-full" style="background-color: #1b85b8">
-                        <div class="card-body" style="padding-top: 40px; padding-left: 50px;padding-bottom: 50px;">
-                            <h1 class="fw-bold" style="color: #fff; font-size: 50px;">Selamat Datang di Aplikasi Pengelolaan Keuangan Sederhana!</h1>
-                            <p class="fw-bold fs-18" style="color: #fff;">Kelola keuangan dengan bijak. <br> Aplikasi Pengelolaan Kengan Sederhana akan membantu pengelolaan finansial anda.</p>
-                            <div class="hstack gap-2 justify-content-start mt-4 mb-2">
-                                <a href="manajemen-keuangan.html" class="btn btn-light" style="width: 250px; border-radius: 20px;">
-                                    <i class="fa-solid fa-pen"></i>&nbsp;
-                                    Pembukuan keuangan Anda
-                                </a>
-                                <a href="artikel.html" class="btn btn-light" style="width: 200px; border-radius: 20px;">
-                                    <i class="fa-regular fa-newspaper"></i>&nbsp;
-                                    Baca Artikel Terikini
-                                </a>
+                    <div class="hstack justify-content-between mb-4">
+                        <div>
+                            <h2 class="mb-1">Agregasi dan Konsolidasi</h2>
+                            <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
+                        </div>
+                        <div>
+                            <img src="assets/images/logo/profil.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+                            <h4 class="mb-4">Filtering</h4>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group mb-3">
+                                        <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                        <select class="form-select">
+                                            <option selected disabled>Pilih Tahun</option>
+                                            <option>2025</option>
+                                            <option selected>2026</option>
+                                            <option>2027</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label for="InvoiceLabel" class="form-label">Filter Data</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Pilih Filter</option>
+                                            <option>KR/KOJK</option>
+                                            <option selected>Provinsi</option>
+                                            <option>TPAKD</option>
+                                            <option>Nasional</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group mb-3">
+                                        <label for="InvoiceLabel" class="form-label">Provinsi</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
+                                            <option value="success" selected>Provinsi Papua</option>
+                                            <option value="success">Kabupaten Biak Numfor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <!--! BEGIN: [mail-editor-action-left] !-->
+                                <div class="d-flex align-items-center">
+                                    <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                        <span>Tampilkan Data</span>
+                                    </button>
+                                    <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                        <span>Hapus Filter</span>
+                                    </a>
+                                    <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                        <span>Unduh Excel</span>
+                                    </button>
+                                </div>
+                                <!--! BEGIN: [mail-editor-action-right] !-->
+                                <div class="d-flex align-items-center"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+
+                            <h4 class="mb-1">Agregasi dan Konsolidasi Tahun 2026</h4>
+                            <p style="font-size: 15px;" class="mb-4">Buku besar (*General Ledger*) yang merangkum keseluruhan target gabungan TPAKD, dan menyandingkannya dengan pencapaian aktual terkini.</p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                        <div class="card-body">
+                                            <div class="fs-12 fw-medium text-muted mb-3" style="font-size: 15px;">Total Jenis Program Kerja yang Diusung</div>
+                                            <div class="hstack justify-content-between lh-base">
+                                                <h3 style="color: #68c4af;"><span class="counter">2 Jenis Program Kerja</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                        <div class="card-body">
+                                            <div class="fs-12 fw-medium text-muted mb-3" style="font-size: 15px;">Total Target Program</div>
+                                            <div class="hstack justify-content-between lh-base">
+                                                <h3 style="color: #68c4af;"><span class="counter">5 Target Program Kerja</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h4 class="mb-4">Statistik Kepatuhan Pelaporan (Telah di-Approve)</h4>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                        <div class="card-body">
+                                            <div class="mb-1 d-flex justify-content-center">
+                                                <div class="fs-4 fw-bold text-dark"><span class="counter">1</span> / <span class="counter">26</span></div>
+                                            </div>
+                                            <div class="mb-1 d-flex justify-content-center" style="border-bottom: 1px solid #e5e7eb;">
+                                                <div>
+                                                    <h3 class="fs-13 fw-semibold text-truncate-1-line" style="align-items: center;">Laporan Rencana</h3>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <span class="fs-12 fw-medium text-muted ">Presentase Laporan Rencana yang disampaikan</span>
+                                                    </div>
+                                                    <div class=" text-end">
+                                                        <span class="fs-11 text-muted"><b>(3,85%)</b></span>
+                                                    </div>
+                                                </div>
+                                                <div class="progress mt-2 ht-3">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 3.85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                        <div class="card-body">
+                                            <div class="mb-1 d-flex justify-content-center">
+                                                <div class="fs-4 fw-bold text-dark"><span class="counter">1</span> / <span class="counter">26</span></div>
+                                            </div>
+                                            <div class="mb-1 d-flex justify-content-center" style="border-bottom: 1px solid #e5e7eb;">
+                                                <div>
+                                                    <h3 class="fs-13 fw-semibold text-truncate-1-line" style="align-items: center;">Realisasi Semester I</h3>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <span class="fs-12 fw-medium text-muted ">Realisasi Semster I yang disampaikan</span>
+                                                    </div>
+                                                    <div class=" text-end">
+                                                        <span class="fs-11 text-muted"><b>(3,85%)</b></span>
+                                                    </div>
+                                                </div>
+                                                <div class="progress mt-2 ht-3">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 3.85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                        <div class="card-body">
+                                            <div class="mb-1 d-flex justify-content-center">
+                                                <div class="fs-4 fw-bold text-dark"><span class="counter">1</span> / <span class="counter">26</span></div>
+                                            </div>
+                                            <div class="mb-1 d-flex justify-content-center" style="border-bottom: 1px solid #e5e7eb;">
+                                                <div>
+                                                    <h3 class="fs-13 fw-semibold text-truncate-1-line" style="align-items: center;">Realisasi Semester I</h3>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <span class="fs-12 fw-medium text-muted ">Realisasi Semster II yang disampaikan</span>
+                                                    </div>
+                                                    <div class=" text-end">
+                                                        <span class="fs-11 text-muted"><b>(3,85%)</b></span>
+                                                    </div>
+                                                </div>
+                                                <div class="progress mt-2 ht-3">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 3.85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- [Mini Cards] start -->
+                    <!-- <div class="card stretch stretch-full" id="Tabel-rencana" style="display: none;"> -->
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <!--! BEGIN: [mail-editor-action-left] !-->
+                                <div class="d-flex align-items-center">
+                                    <h4 class="">Agregasi Makro: Target Rencana dengan Realisasi</h4>
+                                </div>
+                                <!--! BEGIN: [mail-editor-action-right] !-->
+                                <div class="d-flex align-items-center">
+                                    <!-- <input type="text" class="form-control" placeholder="Cari Data"> -->
+                                     <button class="btn btn-success"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Unduh Excel</button>
+                                </div>
                             </div>
                             
+                            <div class="table-responsive"  style="min-height: 300px;">
+                                <table class="table table-hover" id="proposalList">
+                                    <thead>
+                                        <tr>
+                                            <!-- <th>No</th> -->
+                                            <th>Jenis Program Kerja</th>
+                                            <th>Indikator Kuantitatif</th>
+                                            <th>Total Target (Gabungan)</th>
+                                            <th>Total Realisasi (Gabungan)	</th>
+                                            <th>Capaian Agregat (%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="single-item">
+                                            <!-- <td>1</td> -->
+                                            <td>Simpanan Pelajar (SimPel)</td>
+                                            <td>Jumlah Kegiatan (Peningkatan Literasi keuangan)</td>
+                                            <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">10</b></td>
+                                            <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">5</b></td>
+                                            <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                        </tr>
+                                        <tr class="single-item">
+                                            <!-- <td>1</td> -->
+                                            <td>Simpanan Pelajar (SimPel)</td>
+                                            <td>Jumlah Peserta</td>
+                                            <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">1000</b></td>
+                                            <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">500</b></td>
+                                            <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                        </tr>
+                                        <tr class="single-item">
+                                            <!-- <td>1</td> -->
+                                            <td>Simpanan Pelajar (SimPel)</td>
+                                            <td>Total Nasabah</td>
+                                            <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">100</b></td>
+                                            <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">50</b></td>
+                                            <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                        </tr>
+                                        <tr class="single-item">
+                                            <!-- <td>1</td> -->
+                                            <td>Simpanan Pelajar (SimPel)</td>
+                                            <td>Total Nominal Tabungan</td>
+                                            <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">100.000.000</b></td>
+                                            <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">50.000.000</b></td>
+                                            <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                        </tr>
+                                        <tr class="single-item">
+                                            <!-- <td>1</td> -->
+                                            <td>Agen Laku Pandai</td>
+                                            <td>Jumlah Agen</td>
+                                            <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">1.000</b></td>
+                                            <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">500</b></td>
+                                            <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <ul class="list-unstyled d-flex align-items-end gap-2 mb-0 pagination-common-style">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">8</a></li>
+                                    <li><a href="javascript:void(0);">9</a></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="row help-quick-card justify-content-center mb-5">
-                        <div class="col-lg-4 mb-4">
-                            <a href="manajemen-keuangan.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 10px; padding-right: 10px;">
-                                            <img src="assets/images/icons/line-icon/book-icon.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Manajemen Keuangan</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Catat penghasilan dan pengeluaran.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="katalog-asuransi.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 5px; padding-right: 5px;">
-                                            <img src="assets/images/icons/line-icon/shield-icon.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Asuransi dan Proteksi</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Temukan asuransi dan proteksi untuk usaha.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="katalog-pembiayaan.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 5px; padding-right: 5px;">
-                                            <img src="assets/images/icons/line-icon/money.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Akses Modal</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Temukan KUR dan pinjaman lunak untuk usaha.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="artikel.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 10px; padding-right: 10px;">
-                                            <img src="assets/images/icons/line-icon/newspaper.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Artikel dan Berita</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Informasi terbaru dan tips keuangan praktis.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="program-pemberdayaan.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 5px; padding-right: 5px;">
-                                            <img src="assets/images/icons/line-icon/hand.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Program Bantuan</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Cari bantuan pemerintah dan subsidi untuk usaha.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="kesejahteraan-keuangan.html">
-                                <div class="card mb-4 mb-lg-0">
-                                    <div class="card-body p-5 shadow-sm">
-                                        <div class="wd-70 ht-70 d-flex align-items-center justify-content-center mb-4" style="background-color: #bae1ff; border-radius: 8px; border: 2px solid #baffc9; padding-left: 5px; padding-right: 5px;">
-                                            <img src="assets/images/icons/line-icon/calculator.png" class="img-fluid" alt="" >
-                                        </div>
-                                        <h2 class="fs-16 fw-bold mb-3">Kesejahteraan Keuangan</h2>
-                                        <p class="fs-12 fw-medium text-muted text-truncate-3-line">Memberikan gambaran kesejahteraan keuangan.</p>
-                                        <!-- <a href="javascript:void(0);" class="fs-12">Learn More &rarr;</a> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <!-- [Mini Cards] end -->
                 </div>
                 <!--! BEGIN: [topic-category-section] !-->
             </div>
@@ -206,16 +403,195 @@
     <!--! ================================================================ !-->
     <!--! [End] Main Content !-->
     <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Adendum Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Adendum" tabindex="-1" aria-labelledby="Adendum" aria-hidden="true" data-bs-dismiss="ou" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <!-- <div class="modal-header">
+                    
+                </div> -->
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <h3 class="d-flex flex-column mb-3">Ajukan Perubahan Rencana (Adendum)</h3>
+                    <p style="font-size: 18px; align-items: stretch;">Mengajukan Adendum berarti merubah baseline target. Laporan Semester sebelumnya tetap aman di versi lama.</p>
+                    
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="btn btn-danger close-icon" data-bs-dismiss="modal" style="margin-right: 10px;">Batal</a>
+                        <a class="btn btn-success" href="buat-laporan-rencana.html">Ya, Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Adendum Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Detail Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Detail" tabindex="-1" aria-labelledby="Detail" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <div class="modal-header">
+                    <h2 class="d-flex flex-column mb-0">
+                        <span class="fs-18 fw-bold mb-1">Detail Transaksi</span>
+                        <!-- <small class="d-block fs-11 fw-normal text-muted">Compose Your Message</small> -->
+                    </h2>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">Tanggal </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Tanggal</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                            <input type="text" class="form-control" id="" value="01/02/2026" readonly>
+                        </div>
+                    </div>
 
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="20.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan lainnya</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Operasional</small></h2>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bahan Bakar: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-gas-pump"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-snowflake"></i></div>
+                            <input type="text" class="form-control" id="" value="500.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Upah ABK: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-people-group"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Biaya Perbaikan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="fw-semibold fs-11">Biaya Sewa: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="700.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Lainnya</small></h2>
+
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Makan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="300.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bayar Listrik: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="100.000" readonly>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mb-2 align-items-center">
+                        <div class="col-lg-4">
+                            <label for="" class="fw-semibold fs-11 fs-11">Tanggal: </label>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                <input type="date" class="form-control" id="">
+                            </div>
+                        </div>
+                    </div> !-->
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Detail Modal !-->
+    <!--! ================================================================ !-->
     <!--! ================================================================ !-->
     <!--! Footer Script !-->
     <!--! ================================================================ !-->
     <!--! BEGIN: Vendors JS !-->
+    <script>
+        function unduhFunction() {
+        var x = document.getElementById("Tabel-excel");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function tabelFunction() {
+        var x = document.getElementById("Tabel-rencana");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
     <script src="assets/vendors/js/vendors.min.js"></script>
     <!-- vendors.min.js {always must need to be top} -->
     <script src="assets/vendors/js/daterangepicker.min.js"></script>
     <script src="assets/vendors/js/apexcharts.min.js"></script>
     <script src="assets/vendors/js/circle-progress.min.js"></script>
+    <script src="assets/vendors/js/select2.min.js"></script>
+    <script src="assets/vendors/js/select2-active.min.js"></script>
+    <script src="assets/vendors/js/datepicker.min.js"></script>
+    <script src="assets/vendors/js/lslstrength.min.js"></script>
+    <!--! END: Vendors JS !-->
     <!--! END: Vendors JS !-->
     <!--! BEGIN: Apps Init  !-->
     <script src="assets/js/common-init.min.js"></script>

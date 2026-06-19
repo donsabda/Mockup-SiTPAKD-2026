@@ -10,26 +10,26 @@
     border-bottom: 0px !important;
 }
 
-.form-check{
+/* .form-check{
     border: 1px solid #e5e7eb;
     margin-bottom: 5px;
     padding-top: 8px;
     padding-bottom: 10px;
     padding-left: 30px;
     border-radius: 10px;
-}
+} */
 
-.form-check .form-check-input {
+/* .form-check .form-check-input {
     width: 20px;
     height: 20px;
-}
+} */
 
-.form-check .form-check-label {
+/* .form-check .form-check-label {
     margin-left: 20px;
     font-size: 15px;
     font-weight: bolder;
     margin-top: 2px;
-}
+} */
 
 .sparator {
     border-top: 1px solid #6B7885 !important;
@@ -62,10 +62,11 @@
     padding-left: 15px;
     padding-right: 15px;
     font-size: 12px;
+    height: 46.27px;
 }
 
-.terget p {
-    margin-top: 15px;
+.terget .p {
+    /* margin-top: 15px; */
     font-size: 12px;
     font-weight: 800;
     color: rgb(29 78 216 / var(--tw-text-opacity, 1));
