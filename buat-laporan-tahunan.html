@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="author" content="flexilecode" />
+    <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
+    <!--! BEGIN: Apps Title-->
+    <title>SiTPAKD</title>
+    <!--! END:  Apps Title-->
+    <!--! BEGIN: Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!--! END: Favicon-->
+    <!--! BEGIN: Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!--! END: Bootstrap CSS-->
+    <!--! BEGIN: Vendors CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/daterangepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/select2-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/datepicker.min.css">
+    <!--! END: Vendors CSS-->
+    <!--! BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="docs/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--! END: Custom CSS-->
+    <!--! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries !-->
+    <!--! WARNING: Respond.js doesn"t work if you view the page via file: !-->
+    <!--[if lt IE 9]>
+			<script src="https:oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https:oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!--! ================================================================ !-->
+    <!--! [Start] Navigation Manu !-->
+    <!--! ================================================================ !-->
+    <nav class="nxl-navigation">
+        <div class="navbar-wrapper">
+            <div class="m-header" style="border-bottom: 0px !important;">
+                <a href="index.html" class="b-brand">
+                    <!-- ========   change your logo hear   ============ -->
+                    <img src="assets/images/logo/tpakd.jpg" alt="LOGO" class="logo logo-lg" style="width: 140px; height: 70px; margin-left: 30px; margin-top: 10px;"/>
+                    <img src="assets/images/logo/tpakd.jpg" alt="LOGO" class="logo logo-sm" style="width: 70px; height: 70px;"/>
+                </a>
+            </div>
+            <div class="navbar-content">
+                <ul class="nxl-navbar">
+                    <!-- <li class="nxl-item nxl-caption">
+                        <label>Menu Utama</label>
+                    </li> -->
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="index.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-house"></i></span>
+                            <span class="nxl-mtext">Home</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="#" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-link"></i></span>
+                            <span class="nxl-mtext">Laporan Pembentukan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="laporan-rencana.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-file-pen"></i></span>
+                            <span class="nxl-mtext">Laporan Rencana</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="laporan-realisasi.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-file-pen"></i></span>
+                            <span class="nxl-mtext">Laporan Realisasi</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="konsolidasi.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-solid fa-chart-column"></i></span>
+                            <span class="nxl-mtext">Agregasi dan Konsolidasi</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="laporan.tahunan.html" class="nxl-link">
+                            <span class="nxl-micon"><i class="fa-regular fa-calendar"></i></span>
+                            <span class="nxl-mtext">Laporan Tahunan</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--! ================================================================ !-->
+    <!--! [End]  Navigation Manu !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! [Start] Main Content !-->
+    <!--! ================================================================ !-->
+    <main class="nxl-container">
+        <div class="nxl-content">
+            <!-- [ Main Content ] start -->
+            <div class="main-content">
+                <!--! BEGIN: [help-quick-card] !-->
+                <div class="container-lg">
+                    <div class="hstack justify-content-between mb-4">
+                        <div>
+                            <h2 class="mb-1">Upload Laporan Tahunan</h2>
+                            <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
+                        </div>
+                        <div>
+                            <img src="assets/images/logo/profil.png" alt="">
+                        </div>
+                    </div>
+
+                    <!--Program kerja 1-->
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+
+                            <h4 class="mb-3">Periode Laporan</h4>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Tahun --</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h4 class="mb-3">Dokumen Laporan Tahunan</h4>
+
+                            <div class="row">
+                                <!-- <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Upload Dokumen Lembar Pengesahan dan Executive Summary</label>
+                                        <input type="file" class="form-control" id="" value="">
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <label for="InvoiceLabel" class="form-label">Upload Dokumen Lembar Pengesahan dan Executive Summary</label>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" style="font-size: 12px; color: #2563EB;">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    Unduh Template
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <input type="file" class="form-control" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <label for="InvoiceLabel" class="form-label">Upload Dokumen Laporan Tahunan</label>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" style="font-size: 12px; color: #2563EB;">
+                                                    <i class="fa-solid fa-download"></i>
+                                                    Unduh Template
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <input type="file" class="form-control" id="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Program kerja 1 End-->
+
+                    <div class="d-flex align-items-center justify-content-between" style="margin-bottom: 100px;">
+                        <!--! BEGIN: [mail-editor-action-left] !-->
+                        <div class="d-flex align-items-center"></div>
+                        <!--! BEGIN: [mail-editor-action-right] !-->
+                        <div class="d-flex align-items-center">
+                            <!-- <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp; -->
+                            <button class="btn btn-primary">Simpan dan Kirim</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--! BEGIN: [topic-category-section] !-->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+        <!-- [ Footer ] start -->
+    </main>
+    <!--! ================================================================ !-->
+    <!--! [End] Main Content !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Adendum Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Adendum" tabindex="-1" aria-labelledby="Adendum" aria-hidden="true" data-bs-dismiss="ou" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <!-- <div class="modal-header">
+                    
+                </div> -->
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <h3 class="d-flex flex-column mb-3">Ajukan Perubahan Rencana (Adendum)</h3>
+                    <p style="font-size: 18px; align-items: stretch;">Mengajukan Adendum berarti merubah baseline target. Laporan Semester sebelumnya tetap aman di versi lama.</p>
+                    
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="btn btn-danger close-icon" data-bs-dismiss="modal" style="margin-right: 10px;">Batal</a>
+                        <a class="btn btn-success" href="buat-laporan-rencana.html">Ya, Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Adendum Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Detail Modal !-->
+    <!--! ================================================================ !-->
+    <div class="modal fade-scale" id="Detail" tabindex="-1" aria-labelledby="Detail" aria-hidden="true" data-bs-dismiss="ou">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <!--! BEGIN: [modal-header] !-->
+                <div class="modal-header">
+                    <h2 class="d-flex flex-column mb-0">
+                        <span class="fs-18 fw-bold mb-1">Detail Transaksi</span>
+                        <!-- <small class="d-block fs-11 fw-normal text-muted">Compose Your Message</small> -->
+                    </h2>
+                    <a href="javascript:void(0)" class="avatar-text avatar-md bg-soft-danger close-icon" data-bs-dismiss="modal">
+                        <i class="feather-x text-danger"></i>
+                    </a>
+                </div>
+                <!--! BEGIN: [modal-body] !-->
+                <div class="modal-body p-0 p-4">
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">Tanggal </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Tanggal</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                            <input type="text" class="form-control" id="" value="01/02/2026" readonly>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="20.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <!-- <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label> -->
+                        <h2><small class="d-block fs-13 fw-bold mb-2">Penghasilan lainnya</small></h2>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Operasional</small></h2>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bahan Bakar: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-gas-pump"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">ES & Pendinginan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-snowflake"></i></div>
+                            <input type="text" class="form-control" id="" value="500.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Upah ABK: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-people-group"></i></div>
+                            <input type="text" class="form-control" id="" value="2.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Biaya Perbaikan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <input type="text" class="form-control" id="" value="1.000.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="fw-semibold fs-11">Biaya Sewa: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="700.000" readonly>
+                        </div>
+                    </div>
+
+                    <h2><small class="d-block fs-13 fw-bold mb-2">Biaya Lainnya</small></h2>
+
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Makan: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="300.000" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="fw-semibold fs-11">Bayar Listrik: </label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-money-bill"></i></div>
+                            <input type="text" class="form-control" id="" value="100.000" readonly>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mb-2 align-items-center">
+                        <div class="col-lg-4">
+                            <label for="" class="fw-semibold fs-11 fs-11">Tanggal: </label>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-calendar"></i></div>
+                                <input type="date" class="form-control" id="">
+                            </div>
+                        </div>
+                    </div> !-->
+                </div>
+                <!--! BEGIN: [modal-footer] !-->
+                <div class="modal-footer d-flex align-items-center justify-content-between">
+                    <!--! BEGIN: [mail-editor-action-left] !-->
+                    <div class="d-flex align-items-center"></div>
+                    <!--! BEGIN: [mail-editor-action-right] !-->
+                    <div class="d-flex align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! ================================================================ !-->
+    <!--! END: Detail Modal !-->
+    <!--! ================================================================ !-->
+    <!--! ================================================================ !-->
+    <!--! Footer Script !-->
+    <!--! ================================================================ !-->
+    <!--! BEGIN: Vendors JS !-->
+    <script>
+        $('#Tambah').modal({backdrop: 'static', keyboard: false})  
+
+        function getDropDown(sel){
+            hideAll();
+            document.getElementById(sel.options[sel.selectedIndex].value).style.display 
+            = 'block';
+            }
+
+        function hideAll(){
+            document.getElementById("Usaha").style.display = 'none';
+            document.getElementById("Harian").style.display = 'none';
+            document.getElementById("PenghasilanLain").style.display = 'none';
+        }
+
+        function unduhFunction() {
+        var x = document.getElementById("Tabel-excel");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function tabelFunction() {
+        var x = document.getElementById("Tabel-rencana");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script src="assets/vendors/js/vendors.min.js"></script>
+    <!-- vendors.min.js {always must need to be top} -->
+    <script src="assets/vendors/js/daterangepicker.min.js"></script>
+    <script src="assets/vendors/js/apexcharts.min.js"></script>
+    <script src="assets/vendors/js/circle-progress.min.js"></script>
+    <script src="assets/vendors/js/select2.min.js"></script>
+    <script src="assets/vendors/js/select2-active.min.js"></script>
+    <script src="assets/vendors/js/datepicker.min.js"></script>
+    <script src="assets/vendors/js/lslstrength.min.js"></script>
+    <!--! END: Vendors JS !-->
+    <!--! END: Vendors JS !-->
+    <!--! BEGIN: Apps Init  !-->
+    <script src="assets/js/common-init.min.js"></script>
+    <script src="assets/js/dashboard-init.min.js"></script>
+    <!--! END: Apps Init !-->
+    <!--! BEGIN: Theme Customizer  !-->
+    <script src="assets/js/theme-customizer-init.min.js"></script>
+    <!--! END: Theme Customizer !-->
+</body>
+
+</html>

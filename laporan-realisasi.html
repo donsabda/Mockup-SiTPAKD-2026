@@ -111,8 +111,8 @@
                 <div class="container-lg">
                     <div class="hstack justify-content-between mb-4">
                         <div>
-                            <h2 class="mb-1">Laporan Rencana Program Kerja</h2>
-                            <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Provinsi Papua</b>.</p>
+                            <h2 class="mb-1">Laporan Realisasi Program Kerja</h2>
+                            <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan realisasi <b>TPAKD Provinsi Papua</b>.</p>
                         </div>
                         <div>
                             <img src="assets/images/logo/profil.png" alt="">
@@ -120,9 +120,9 @@
                     </div>
 
                     <div class="col-md-4">
-                        <a href="buat-laporan-rencana.html" class="btn btn-primary mb-3" style="width: 220px;">
+                        <a href="buat-laporan-realisasi.html" class="btn btn-primary mb-3" style="width: 220px;">
                             <i class="feather-plus me-2"></i>
-                            <span>Buat Laporan Rencana</span>
+                            <span>Buat Laporan Realisasi</span>
                         </a>
                     </div>
 
@@ -131,7 +131,7 @@
                             <h4 class="mb-4">Filtering</h4>
 
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group mb-3">
                                         <label for="InvoiceLabel" class="form-label">Tahun</label>
                                         <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
@@ -139,6 +139,16 @@
                                             <option>2025</option>
                                             <option selected>2026</option>
                                             <option>2027</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label for="InvoiceLabel" class="form-label">Periode Pelaporan</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
+                                            <!-- <option selected disabled>Pilih Tahun</option> -->
+                                            <option selected>Semester I</option>
+                                            <option>Semester II</option>
                                         </select>
                                     </div>
                                 </div>
@@ -153,12 +163,12 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-6">
                                     <div class="form-group mb-3">
                                         <label for="InvoiceLabel" class="form-label">Nama TPAKD</label>
                                         <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
                                             <option value="success" selected>Provinsi Papua</option>
-                                            <option value="success"selected>Kabupaten Biak Numfor</option>
+                                            <option value="success" selected>Kabupaten Biak Numfor</option>
                                         </select>
                                     </div>
                                 </div>
@@ -262,6 +272,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Tahun</th>
+                                            <th>Periode Pelaporan</th>
                                             <th>Nama TPAKD</th>
                                             <th>Versi</th>
                                             <th>Jumlah Program</th>
@@ -273,6 +284,7 @@
                                         <tr class="single-item">
                                             <td>1</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Provinsi Papua</td>
                                             <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
                                             <td class="fw-bold text-dark">1 Program</td>
@@ -284,17 +296,17 @@
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li>
-                                                            <a class="dropdown-item" href="buat-laporan-rencana.html">
+                                                            <a class="dropdown-item" href="buat-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-pen-to-square"></i>
                                                                 <span>Edit</span>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="#">
+                                                        <!-- <li>
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-trash"></i>
                                                                 <span>Hapus Laporan</span>
                                                             </a>
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </div>
                                             </td>
@@ -302,6 +314,7 @@
                                         <tr class="single-item">
                                             <td>2</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Provinsi Papua</td>
                                             <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
                                             <td class="fw-bold text-dark">2 Program</td>
@@ -319,7 +332,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -331,6 +344,7 @@
                                         <tr class="single-item">
                                             <td>3</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Provinsi Papua</td>
                                             <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
                                             <td class="fw-bold text-dark">2 Program</td>
@@ -348,7 +362,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -360,6 +374,7 @@
                                         <tr class="single-item">
                                             <td>4</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Provinsi Papua</td>
                                             <td><div class="badge bg-gray-200 text-dark">V1 Latest</div></td>
                                             <td class="fw-bold text-dark">2 Program</td>
@@ -377,7 +392,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -389,6 +404,7 @@
                                         <tr class="single-item">
                                             <td>5</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Kabupaten Biak Numfor</td>
                                             <td><div class="badge bg-gray-200 text-dark">V1</div></td>
                                             <td class="fw-bold text-dark">3 Program</td>
@@ -406,7 +422,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -418,10 +434,11 @@
                                         <tr class="single-item">
                                             <td>6</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Kabupaten Biak Numfor</td>
                                             <td><div class="badge bg-gray-200 text-dark">V2 Latest</div></td>
                                             <td class="fw-bold text-dark">3 Program</td>
-                                            <td><div class="badge bg-dark">Draft Adendum</div></td>
+                                            <td><div class="badge bg-dark">Draft</div></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
@@ -434,12 +451,12 @@
                                                                 <span>Edit</span>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a class="dropdown-item printBTN" href="#">
+                                                        <!-- <li>
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-trash"></i>
                                                                 <span>Hapus Laporan</span>
                                                             </a>
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </div>
                                             </td>
@@ -447,6 +464,7 @@
                                         <tr class="single-item">
                                             <td>7</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Kabupaten Biak Numfor</td>
                                             <td><div class="badge bg-gray-200 text-dark">V2 Latest</div></td>
                                             <td class="fw-bold text-dark">4 Program</td>
@@ -464,7 +482,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -476,6 +494,7 @@
                                         <tr class="single-item">
                                             <td>8</td>
                                             <td>2026</td>
+                                            <td>Semester I</td>
                                             <td>Kabupaten Biak Numfor</td>
                                             <td><div class="badge bg-gray-200 text-dark">V2 Latest</div></td>
                                             <td class="fw-bold text-dark">4 Program</td>
@@ -493,7 +512,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a class="dropdown-item printBTN" href="detail-laporan-rencana.html">
+                                                            <a class="dropdown-item printBTN" href="detail-laporan-realisasi.html">
                                                                 <i class="fa-solid fa-circle-info"></i>
                                                                 <span>Detail/Tanggapan</span>
                                                             </a>
@@ -560,7 +579,7 @@
                     <!--! BEGIN: [mail-editor-action-right] !-->
                     <div class="d-flex align-items-center">
                         <a href="javascript:void(0)" class="btn btn-danger close-icon" data-bs-dismiss="modal" style="margin-right: 10px;">Batal</a>
-                        <a class="btn btn-success" href="buat-laporan-rencana.html">Ya, Lanjut</a>
+                        <a class="btn btn-success" href="buat-laporan-realisasi.html">Ya, Lanjut</a>
                     </div>
                 </div>
             </div>

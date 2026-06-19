@@ -1,6 +1,6 @@
-body {
+/* body {
     background-color: #F8FAFC !important;
-}
+} */
 
 .hstack-text {
     font-size: 30px !important;
@@ -34,4 +34,57 @@ body {
 .sparator {
     border-top: 1px solid #6B7885 !important;
     border-bottom: 1px solid #e5e7eb !important;
+}
+
+.badge-detail {
+    font-size: 15px;
+    background-color: rgb(254 243 199 / var(--tw-bg-opacity, 1)); 
+    color: rgb(146 64 14 / var(--tw-text-opacity, 1));
+}
+
+.table-detail b {
+    color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.table-detail td {
+    font-size: 16px;
+}
+
+.badge b{
+    font-size: 16px;
+    /* color: rgb(107 114 128 / var(--tw-text-opacity, 1)); */
+}
+
+.terget {
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)); 
+    border: 1px solid rgb(229 231 235 / var(--tw-border-opacity, 1)); 
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+}
+
+.terget p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+.target-detail p {
+    font-size: 15px;
+}
+
+.target-detail .b {
+    color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+    font-weight: 800;
+}
+
+.target-detail .badge {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.m-header {
+    height: 200px !important;
 }
