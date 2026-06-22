@@ -89,3 +89,7 @@
 .m-header {
     height: 200px !important;
 }
+
+.form-group .col-form-label {
+    font-size: 11px !important;
+}
