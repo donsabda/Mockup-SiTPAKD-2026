@@ -115,71 +115,255 @@
                             <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
                         </div>
                         <div>
-                            <img src="assets/images/logo/profil.png" alt="">
+                            <!-- <img src="assets/images/logo/profil.png" alt=""> -->
+                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <!-- <label for="InvoiceLabel" class="form-label">Periode Pelaporan</label> -->
+                                        <select class="form-control" name="periode" onChange="getDropDown(this)">
+                                            <!-- <option selected>-- Pilih Periode Pelaporan --</option> -->
+                                            <option value="S1">Kabupaten/Kota</option>
+                                            <option value="S2">Provinsi</option>
+                                            <option value="S3">KR/KOJK</option>
+                                            <option value="S4">Nasional</option>
+                                        </select>
+                                    </div>
+                                </div>
+                             </div>
                         </div>
                     </div>
 
-                    <div class="card stretch stretch-full">
-                        <div class="card-body">
-                            <h4 class="mb-4">Filtering</h4>
+                    <!-- Kabupaten/Kota -->
+                    <div id="S1">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <h4 class="mb-4">Filtering</h4>
 
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group mb-3">
-                                        <label for="InvoiceLabel" class="form-label">Tahun</label>
-                                        <select class="form-select">
-                                            <option selected disabled>Pilih Tahun</option>
-                                            <option>2025</option>
-                                            <option selected>2026</option>
-                                            <option>2027</option>
-                                        </select>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                            <select class="form-select">
+                                                <option selected disabled>Pilih Tahun</option>
+                                                <option>2025</option>
+                                                <option selected>2026</option>
+                                                <option>2027</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group mb-3">
-                                        <label for="InvoiceLabel" class="form-label">Filter Data</label>
-                                        <select class="form-control" onChange="getDropDown(this)">
-                                            <option selected disabled>Pilih Filter</option>
-                                            <option value="S1">Provinsi</option>
-                                            <option value="S2">KR/KOJK</option>
-                                            <option value="S3">Nasional</option>
-                                        </select>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center">
+                                        <button onclick="kabkotaFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Tampilkan Data</span>
+                                        </button>
+                                        <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Hapus Filter</span>
+                                        </a>
+                                        <!-- <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Unduh Excel</span>
+                                        </button> -->
                                     </div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center"></div>
                                 </div>
-                                <div class="col-md-5">
-                                    <div class="form-group mb-3">
-                                        <label for="InvoiceLabel" class="form-label">Provinsi</label>
-                                        <select class="form-control">
-                                            <option selected disabled>Pilih Provinsi</option>
-                                            <option selected>Provinsi Papua</option>
-                                            <!-- <option>KR/KOJK</option>
-                                            <option>Nasional</option> -->
-                                        </select>
-                                    </div>
-                                </div>
+
                             </div>
-
-                            <div class="d-flex align-items-center justify-content-between">
-                                <!--! BEGIN: [mail-editor-action-left] !-->
-                                <div class="d-flex align-items-center">
-                                    <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Tampilkan Data</span>
-                                    </button>
-                                    <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Hapus Filter</span>
-                                    </a>
-                                    <!-- <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
-                                        <span>Unduh Excel</span>
-                                    </button> -->
-                                </div>
-                                <!--! BEGIN: [mail-editor-action-right] !-->
-                                <div class="d-flex align-items-center"></div>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <div id="S1" style="display: none;">
+                        <div id="Data-kabkota">
+                                <div class="card stretch stretch-full" >
+                                <div class="card-body">
+
+                                    <h4 class="mb-1">Agregasi dan Konsolidasi TPAKD Kabupaten Biak Numfor Tahun 2026</h4>
+                                    <p style="font-size: 15px;" class="mb-4">Buku besar (*General Ledger*) yang merangkum keseluruhan target gabungan TPAKD, dan menyandingkannya dengan pencapaian aktual terkini.</p>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                                <div class="card-body">
+                                                    <div class="fs-12 fw-medium text-muted mb-3" style="font-size: 15px;">Total Jenis Program Kerja yang Diusung</div>
+                                                    <div class="hstack justify-content-between lh-base">
+                                                        <h3 style="color: #68c4af;"><span class="counter">2 Jenis Program Kerja</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card stretch stretch-full" style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)); border: 1px solid #e5e7eb;">
+                                                <div class="card-body">
+                                                    <div class="fs-12 fw-medium text-muted mb-3" style="font-size: 15px;">Total Target Program</div>
+                                                    <div class="hstack justify-content-between lh-base">
+                                                        <h3 style="color: #68c4af;"><span class="counter">5 Target Program Kerja</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card stretch stretch-full">
+                                <div class="card-body">
+
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <!--! BEGIN: [mail-editor-action-left] !-->
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="">Agregasi Makro: Target Rencana dengan Realisasi</h4>
+                                        </div>
+                                        <!--! BEGIN: [mail-editor-action-right] !-->
+                                        <div class="d-flex align-items-center">
+                                            <!-- <input type="text" class="form-control" placeholder="Cari Data"> -->
+                                            <button class="btn btn-success"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Unduh Excel</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="table-responsive"  style="min-height: 300px;">
+                                        <table class="table table-hover" id="proposalList">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <th>No</th> -->
+                                                    <th>Jenis Program Kerja</th>
+                                                    <th>Indikator Kuantitatif</th>
+                                                    <th>Total Target (Gabungan)</th>
+                                                    <th>Total Realisasi (Gabungan)	</th>
+                                                    <th>Capaian Agregat (%)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="single-item">
+                                                    <!-- <td>1</td> -->
+                                                    <td>Simpanan Pelajar (SimPel)</td>
+                                                    <td>Jumlah Kegiatan (Peningkatan Literasi keuangan)</td>
+                                                    <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">10</b></td>
+                                                    <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">5</b></td>
+                                                    <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                                </tr>
+                                                <tr class="single-item">
+                                                    <!-- <td>1</td> -->
+                                                    <td>Simpanan Pelajar (SimPel)</td>
+                                                    <td>Jumlah Peserta</td>
+                                                    <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">1000</b></td>
+                                                    <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">500</b></td>
+                                                    <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                                </tr>
+                                                <tr class="single-item">
+                                                    <!-- <td>1</td> -->
+                                                    <td>Simpanan Pelajar (SimPel)</td>
+                                                    <td>Total Nasabah</td>
+                                                    <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">100</b></td>
+                                                    <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">50</b></td>
+                                                    <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                                </tr>
+                                                <tr class="single-item">
+                                                    <!-- <td>1</td> -->
+                                                    <td>Simpanan Pelajar (SimPel)</td>
+                                                    <td>Total Nominal Tabungan</td>
+                                                    <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">100.000.000</b></td>
+                                                    <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">50.000.000</b></td>
+                                                    <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                                </tr>
+                                                <tr class="single-item">
+                                                    <!-- <td>1</td> -->
+                                                    <td>Agen Laku Pandai</td>
+                                                    <td>Jumlah Agen</td>
+                                                    <td><b style="color: rgb(29 78 216 / var(--tw-text-opacity, 1));">1.000</b></td>
+                                                    <td><b style="color: rgb(126 34 206 / var(--tw-text-opacity, 1));">500</b></td>
+                                                    <td><b style="font-weight: 900; color: #68c4af;">50%</b></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="card-footer">
+                                        <ul class="list-unstyled d-flex align-items-end gap-2 mb-0 pagination-common-style">
+                                            <li>
+                                                <a href="javascript:void(0);"><i class="bi bi-arrow-left"></i></a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="active">1</a></li>
+                                            <li><a href="javascript:void(0);">2</a></li>
+                                            <li>
+                                                <a href="javascript:void(0);"><i class="bi bi-dot"></i></a>
+                                            </li>
+                                            <li><a href="javascript:void(0);">8</a></li>
+                                            <li><a href="javascript:void(0);">9</a></li>
+                                            <li>
+                                                <a href="javascript:void(0);"><i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Kabupaten/Kota End -->
+
+                    <!-- Provinsi -->
+                    <div id="S2" style="display: none;">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <h4 class="mb-4">Filtering</h4>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                            <select class="form-select">
+                                                <option selected disabled>Pilih Tahun</option>
+                                                <option>2025</option>
+                                                <option selected>2026</option>
+                                                <option>2027</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-4">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Filter Data</label>
+                                            <select class="form-control" onChange="getDropDown(this)">
+                                                <option selected disabled>Pilih Filter</option>
+                                                <option value="S1">Kabupaten/Kota</option>
+                                                <option value="S2">Provinsi</option>
+                                                <option value="S3">KR/KOJK</option>
+                                                <option value="S4">Nasional</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-md-5">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Provinsi</label>
+                                            <select class="form-control">
+                                                <option selected>Semua Provinsi</option>
+                                                <option selected>Provinsi Papua</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center">
+                                        <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Tampilkan Data</span>
+                                        </button>
+                                        <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Hapus Filter</span>
+                                        </a>
+                                        <!-- <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Unduh Excel</span>
+                                        </button> -->
+                                    </div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <div class="card stretch stretch-full">
                             <div class="card-body">
 
@@ -228,7 +412,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Presentase Laporan Rencana yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Rencana Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -255,7 +439,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Realisasi Semster I yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Realisasi Semester I Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -282,7 +466,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Realisasi Semster II yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Realisasi Semester II Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -393,8 +577,57 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Provinsi End -->
 
-                    <div id="S2" style="display: none;">
+                    <!-- KR/KOJK -->
+                    <div id="S3" style="display: none;">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <h4 class="mb-4">Filtering</h4>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                            <select class="form-select">
+                                                <option selected disabled>Pilih Tahun</option>
+                                                <option>2025</option>
+                                                <option selected>2026</option>
+                                                <option>2027</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Provinsi</label>
+                                            <select class="form-control">
+                                                <option selected>Semua Provinsi</option>
+                                                <option selected>Provinsi Papua</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center">
+                                        <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Tampilkan Data</span>
+                                        </button>
+                                        <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Hapus Filter</span>
+                                        </a>
+                                        <!-- <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Unduh Excel</span>
+                                        </button> -->
+                                    </div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <div class="card stretch stretch-full">
                             <div class="card-body">
 
@@ -443,7 +676,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Presentase Laporan Rencana yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Rencana Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -470,7 +703,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Realisasi Semster I yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Realisasi Semester I Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -497,7 +730,7 @@
                                                 <div>
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <span class="fs-12 fw-medium text-muted ">Realisasi Semster II yang disampaikan</span>
+                                                            <span class="fs-12 fw-medium text-muted ">Laporan Realisasi Semester II Telah Di-Approve</span>
                                                         </div>
                                                         <div class=" text-end">
                                                             <span class="fs-11 text-muted"><b>(3,03%)</b></span>
@@ -608,8 +841,71 @@
                             </div>
                         </div>
                     </div>
+                    <!-- KR/KOJK End -->
 
-                    <div id="S3" style="display: none;">
+                    <!-- Nasional -->
+                    <div id="S4" style="display: none;">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <h4 class="mb-4">Filtering</h4>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                            <select class="form-select">
+                                                <option selected disabled>Pilih Tahun</option>
+                                                <option>2025</option>
+                                                <option selected>2026</option>
+                                                <option>2027</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Filter Data</label>
+                                            <select class="form-control">
+                                                <option selected disabled>Pilih Filter</option>
+                                                <option >TPAKD</option>
+                                                <option >Provinsi</option>
+                                                <option >KR/KOJK</option>
+                                                <option >Nasional</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label">Provinsi</label>
+                                            <select class="form-control">
+                                                <option selected disabled>Pilih Provinsi</option>
+                                                <option selected>Provinsi Papua</option>
+                                                <!-- <option>KR/KOJK</option>
+                                                <option>Nasional</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center">
+                                        <button onclick="tabelFunction()" class="btn btn-primary mt-3" style="width: 130px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Tampilkan Data</span>
+                                        </button>
+                                        <a href="" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Hapus Filter</span>
+                                        </a>
+                                        <!-- <button onclick="unduhFunction()" class="btn btn-primary mt-3" style="width: 120px; background-color: #2b2b2b !important; margin-right: 10px;">
+                                            <span>Unduh Excel</span>
+                                        </button> -->
+                                    </div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
                         <div class="card stretch stretch-full">
                             <div class="card-body">
 
@@ -823,6 +1119,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Nasional End -->
 
                 </div>
                 <!--! BEGIN: [topic-category-section] !-->
@@ -1006,10 +1303,11 @@
             document.getElementById("S1").style.display = 'none';
             document.getElementById("S2").style.display = 'none';
             document.getElementById("S3").style.display = 'none';
+            document.getElementById("S4").style.display = 'none';
         }
 
-        function unduhFunction() {
-        var x = document.getElementById("Tabel-excel");
+        function kabkotaFunction() {
+        var x = document.getElementById("Data-kabkota");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
@@ -1017,8 +1315,26 @@
             }
         }
 
-        function tabelFunction() {
-        var x = document.getElementById("Tabel-rencana");
+        function provinsiFunction() {
+        var x = document.getElementById("Data-provinsi");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function kojkFunction() {
+        var x = document.getElementById("Data-kojk");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function nasionalFunction() {
+        var x = document.getElementById("Data-nasional");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

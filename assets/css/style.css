@@ -73,7 +73,7 @@
 }
 
 .target-detail p {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .target-detail .b {
@@ -84,6 +84,10 @@
 .target-detail .badge {
     font-size: 13px;
     font-weight: 800;
+}
+
+.target-detail-2 p {
+    font-size: 13px;
 }
 
 .m-header {
