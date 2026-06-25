@@ -56,7 +56,8 @@
 }
 
 .terget {
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)); 
+    /* background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));  */
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
     border: 1px solid rgb(229 231 235 / var(--tw-border-opacity, 1)); 
     border-radius: 5px;
     padding-left: 15px;
@@ -65,20 +66,27 @@
     height: 46.27px;
 }
 
-.terget .p {
+.terget span {
     /* margin-top: 15px; */
     font-size: 12px;
     font-weight: 800;
+    color: #283c50;
+}
+
+.terget b {
+    font-weight: 900;
     color: rgb(29 78 216 / var(--tw-text-opacity, 1));
 }
 
-.target-detail p {
-    font-size: 12px;
+.target-detail td {
+    font-size: 15px;
+    font-weight: 600;
+    /* border-bottom: 0px !important; */
 }
 
 .target-detail .b {
     color: rgb(29 78 216 / var(--tw-text-opacity, 1));
-    font-weight: 800;
+    font-weight: 900 !important;
 }
 
 .target-detail .badge {
@@ -96,4 +104,24 @@
 
 .form-group .col-form-label {
     font-size: 11px;
+}
+
+.info-capaian {
+    border-bottom: 1px solid #91a1b6;
+}
+
+.info-capaian p {
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 0px !important;
+}
+
+.info-capaian p b {
+    color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+    font-weight: 900;
+}
+
+.info-capaian .col-form-label {
+    font-size: 13px !important;
+    margin-top: 7px;
 }
