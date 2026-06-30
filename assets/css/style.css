@@ -47,7 +47,7 @@
 }
 
 .table-detail td {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .badge b{
@@ -68,8 +68,8 @@
 
 .terget span {
     /* margin-top: 15px; */
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: 700;
     color: #283c50;
 }
 
@@ -94,6 +94,10 @@
     font-weight: 800;
 }
 
+.target-detail h6 span {
+    font-weight: 500;
+}
+
 .target-detail-2 p {
     font-size: 13px;
 }
@@ -106,9 +110,9 @@
     font-size: 11px;
 }
 
-.info-capaian {
+/* .info-capaian {
     border-bottom: 1px solid #91a1b6;
-}
+} */
 
 .info-capaian p {
     font-size: 13px;
@@ -122,6 +126,7 @@
 }
 
 .info-capaian .col-form-label {
-    font-size: 13px !important;
+    font-size: 15px !important;
+    font-weight: 700px;
     margin-top: 7px;
 }
