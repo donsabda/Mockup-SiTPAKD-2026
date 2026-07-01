@@ -130,3 +130,8 @@
     font-weight: 700px;
     margin-top: 7px;
 }
+
+.text-truncate-1-line {
+    font-size: 18px;
+    font-weight: 900;
+}
