@@ -111,11 +111,25 @@
                 <div class="container-lg">
                     <div class="hstack justify-content-between mb-4">
                         <div>
-                            <h2 class="mb-1">Buat Laporan Rencana Program Kerja</h2>
+                            <h2 class="mb-1">Perubahan Laporan Rencana Program Kerja</h2>
                             <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
                         </div>
                         <div>
                             <img src="assets/images/logo/profil.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label" style="font-size: 20px !important;">Alasan Pengajuan Perubahan</label>
+                                        <textarea class="form-control" placeholder="Inputkan Alasan Pengajuan Perubahan progra kerja" style="min-height: 180px !important;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -127,10 +141,10 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Tahun</label>
-                                        <select class="form-control">
+                                        <select class="form-control" disabled>
                                             <option selected disabled>-- Pilih Tahun --</option>
                                             <option>2025</option>
-                                            <option>2026</option>
+                                            <option selected>2026</option>
                                             <option>2027</option>
                                         </select>
                                     </div>
@@ -146,7 +160,7 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <!--! BEGIN: [mail-editor-action-left] !-->
                                 <div class="d-flex align-items-center">
-                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #1</div><br>
+                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #1</div>
                                 </div>
                                 <!--! BEGIN: [mail-editor-action-right] !-->
                                 <div class="d-flex align-items-center"></div>
@@ -171,17 +185,17 @@
                                 <div class="col-md-12 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Tema Program Kerja</label>
-                                        <input type="text" class="form-control" id="" value="" placeholder="Input Tema Program kerja">
+                                        <input type="text" class="form-control" id="" value="Papua Kuat Indonesia Sehat" placeholder="Input Tema Program kerja" readonly>
                                         <small class="form-text text-muted">Klik dropdown untuk gunakan tema yang pernah dibuat</small>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Jenis Program Kerja</label>
-                                        <select class="form-control">
+                                        <select class="form-control" disabled>
                                             <option selected disabled>-- Pilih Jenis Program kerja --</option>
                                             <option value="Kpmr">Kredit/Pembiayaan Melawan Rentenir (K/PMR)</option>
-                                            <option value="Simpel">Simpanan Pelajar (SimPel)</option>
+                                            <option value="Simpel" selected>Simpanan Pelajar (SimPel)</option>
                                             <option value="Lakupandai">Agen Laku Pandai</option>
                                             <option value="Eki">Ekosistem Keuangan Inklusi (EKI)</option>
                                         </select>
@@ -190,7 +204,7 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Nama Program Kerja</label>
-                                        <input type="text" class="form-control" id="" value="" placeholder="Input Nama Program kerja">
+                                        <input type="text" class="form-control" id="" value="Program SimPel di Provinsi Papua" placeholder="Input Nama Program kerja" readonly>
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-6 mb-2">
@@ -205,21 +219,21 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
-                                        <select class="form-control">
+                                        <select class="form-control" disabled>
                                             <option selected disabled>-- Pilih Kategori Program Kerja --</option>
                                             <option>Konvensional</option>
                                             <option>Syariah</option>
-                                            <option>Konvensional dan Syariah</option>
+                                            <option selected>Konvensional dan Syariah</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
-                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" disabled>
                                             <option selected>Pelajar/Mahasiswa</option>
                                             <option>UMKM</option>
-                                            <option selected>Masyarakat Umum</option>
+                                            <option>Masyarakat Umum</option>
                                             <option>Koperasi</option>
                                             <option>Petani/Nelayan</option>
                                             <option>Pekerja Migran</option>
@@ -233,7 +247,7 @@
                                 <div class="col-md-12 mb-4">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Keterangan / Definisi Singkat Program Kerja</label>
-                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;"></textarea>
+                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +262,7 @@
 
                                     <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked disabled>
                                             <label class="form-check-label" for="defaultCheck1">
                                                 <h6>Peningkatan Literasi keuangan</h6>
                                             </label>
@@ -264,7 +278,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="10" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -278,7 +292,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="1.000" placeholder="Masukan Angka Target" readonly>
                                                     <span class="input-group-text" id="basic-addon3">Orang</span>
                                                 </div>
                                             </div>
@@ -287,7 +301,7 @@
 
                                     <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
                                             <label class="form-check-label" for="defaultCheck1">
                                                 <h6>Asistensi dan Pendampingan</h6>
                                             </label>
@@ -303,7 +317,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -317,7 +331,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                                     <span class="input-group-text" id="basic-addon3">Orang</span>
                                                 </div>
                                             </div>
@@ -326,7 +340,7 @@
 
                                     <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked disabled>
                                             <label class="form-check-label" for="defaultCheck1">
                                                 <h6>Optimalisasi Produk dan Layanan - Produk Tabungan</h6>
                                             </label>
@@ -342,7 +356,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="100" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
@@ -357,7 +371,7 @@
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" id="basic-addon3">Rp</span>
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="100.000.000" placeholder="Masukan Angka Target" readonly>
                                                 </div>
                                             </div>
                                         </div>
@@ -365,7 +379,7 @@
 
                                     <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked disabled>
                                             <label class="form-check-label" for="defaultCheck1">
                                                 <h6>Penguatan Infrastruktur - Penerbitan Produk/Kebijakan, Lainnya</h6>
                                             </label>
@@ -382,7 +396,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="100" placeholder="Masukan Angka Target" readonly>
                                                     <span class="input-group-text" id="basic-addon3">%</span>
                                                 </div>
                                             </div>
@@ -397,20 +411,39 @@
                     <!--Program kerja 1 End-->
 
                     <!--Program kerja 2-->
-                    <div class="card stretch stretch-full" id="Tabel-excel" style="display: none;">
+                    <div class="card stretch stretch-full" id="Tabel-excel">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
                                 <!--! BEGIN: [mail-editor-action-left] !-->
                                 <div class="d-flex align-items-center">
-                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #2</div><br>
+                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #2</div>&nbsp;<div class="badge bg-danger" style="font-size: 18px;">Revisi</div>
                                 </div>
                                 <!--! BEGIN: [mail-editor-action-right] !-->
-                                <div class="d-flex align-items-center">
+                                <!-- <div class="d-flex align-items-center">
                                     <button onclick="unduhFunction()" class="btn btn-danger">
                                         <i class="fa-solid fa-trash"></i>&nbsp;
                                         Hapus
                                     </button>
+                                </div> -->
+                            </div>
+
+                            <hr>
+
+                            <h4 class="mb-4">Tanggapan Laporan</h4>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Persetujuan Laporan (Sekretariat TPAKD Provinsi)</label>
+                                        <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly>Jumlah target Tidak sesuai dengan dokumen RKPD</textarea>
+                                    </div>
                                 </div>
+                                <!-- <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Laporan (Sekretariat Pusat)</label>
+                                        <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
+                                    </div>
+                                </div> -->
                             </div>
 
                             <hr>
@@ -432,7 +465,7 @@
                                 <div class="col-md-12 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Tema Program Kerja</label>
-                                        <input type="text" class="form-control" id="" value="" placeholder="Input Tema Program kerja">
+                                        <input type="text" class="form-control" id="" value="Akses Keuangan Desa" placeholder="Input Tema Program kerja">
                                         <small class="form-text text-muted">Klik dropdown untuk gunakan tema yang pernah dibuat</small>
                                     </div>
                                 </div>
@@ -443,7 +476,7 @@
                                             <option selected disabled>-- Pilih Jenis Program kerja --</option>
                                             <option value="Kpmr">Kredit/Pembiayaan Melawan Rentenir (K/PMR)</option>
                                             <option value="Simpel">Simpanan Pelajar (SimPel)</option>
-                                            <option value="Lakupandai">Agen Laku Pandai</option>
+                                            <option value="Lakupandai" selected>Agen Laku Pandai</option>
                                             <option value="Eki">Ekosistem Keuangan Inklusi (EKI)</option>
                                         </select>
                                     </div> 
@@ -451,7 +484,7 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Nama Program Kerja</label>
-                                        <input type="text" class="form-control" id="" value="" placeholder="Input Nama Program kerja">
+                                        <input type="text" class="form-control" id="" value="Program Agen Lakupandai di Provinsi Papua" placeholder="Input Nama Program kerja">
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-6 mb-2">
@@ -468,8 +501,8 @@
                                         <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
                                         <select class="form-control">
                                             <option selected disabled>-- Pilih Kategori Program Kerja --</option>
-                                            <option>Konvensional</option>
-                                            <option>Syariah</option>
+                                            <option selected>Konvensional</option>
+                                            <option selected>Syariah</option>
                                             <option>Konvensional dan Syariah</option>
                                         </select>
                                     </div>
@@ -477,9 +510,9 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
-                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
-                                            <option selected>Pelajar/Mahasiswa</option>
-                                            <option>UMKM</option>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
+                                            <option>Pelajar/Mahasiswa</option>
+                                            <option selected>UMKM</option>
                                             <option selected>Masyarakat Umum</option>
                                             <option>Koperasi</option>
                                             <option>Petani/Nelayan</option>
@@ -494,7 +527,7 @@
                                 <div class="col-md-12 mb-4">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Keterangan / Definisi Singkat Program Kerja</label>
-                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;"></textarea>
+                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -525,7 +558,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -539,7 +572,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                                     <span class="input-group-text" id="basic-addon3">Orang</span>
                                                 </div>
                                             </div>
@@ -564,7 +597,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -578,7 +611,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                                     <span class="input-group-text" id="basic-addon3">Orang</span>
                                                 </div>
                                             </div>
@@ -603,7 +636,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
@@ -618,7 +651,7 @@
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" id="basic-addon3">Rp</span>
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
                                                 </div>
                                             </div>
                                         </div>
@@ -626,9 +659,9 @@
 
                                     <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
                                             <label class="form-check-label" for="defaultCheck1">
-                                                <h6>Penguatan Infrastruktur - Penerbitan Produk/Kebijakan, Lainnya</h6>
+                                                <h6>Penguatan Infrastruktur - Titik Akses Keuangan</h6>
                                             </label>
                                         </div>
                                         <!-- <h6 style="margin-top: 15px;">Penguatan Infrastruktur - Penerbitan Produk/Kebijakan, Lainnya</h6> -->
@@ -637,14 +670,14 @@
                                                 <div class="form-check" style="margin-top: 15px;">
                                                     <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
                                                     <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
-                                                        Presentase yang dilakukan
+                                                        Jumlah Agen
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target">
-                                                    <span class="input-group-text" id="basic-addon3">%</span>
+                                                    <input type="text" class="form-control" id="" value="100" placeholder="Masukan Angka Target">
+                                                    <!-- <span class="input-group-text" id="basic-addon3">%</span> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -658,10 +691,10 @@
                     <!--Program kerja 2 End-->
 
                     <!--Tombol Tambah-->
-                    <button onclick="unduhFunction()" class="btn btn-light" style="width: 100%; border: 2px dashed rgb(147 197 253 / var(--tw-border-opacity, 1)); color: #2563EB; font-weight: 600; font-size: 15px;">
+                    <!-- <button onclick="unduhFunction()" class="btn btn-light" style="width: 100%; border: 2px dashed rgb(147 197 253 / var(--tw-border-opacity, 1)); color: #2563EB; font-weight: 600; font-size: 15px;">
                         <i class="fa-solid fa-plus"></i>&nbsp;
                         Tambah Program Kerja Baru
-                    </button>
+                    </button> -->
                     <!--Tombol Tambah End-->
 
                     <!--Upload Dokumen-->
@@ -675,7 +708,7 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Upload Rencana Kerja (RKPD) / Revisi</label>
-                                        <input type="file" class="form-control" id="" value="">
+                                        <input type="file" class="form-control" id="" value="" disabled>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-2">
@@ -693,7 +726,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <input type="file" class="form-control" id="" value="">
+                                        <input type="file" class="form-control" id="" value="" disabled>
                                     </div>
                                 </div>
                             </div>
@@ -707,8 +740,8 @@
                         <div class="d-flex align-items-center"></div>
                         <!--! BEGIN: [mail-editor-action-right] !-->
                         <div class="d-flex align-items-center">
-                            <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
-                            <button class="btn btn-primary">Simpan dan Kirim</button>
+                            <!-- <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp; -->
+                            <a href="laporan-rencana.html" class="btn btn-primary">Simpan dan Kirim</a>
                         </div>
                     </div>
 
