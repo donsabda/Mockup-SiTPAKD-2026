@@ -125,6 +125,7 @@
                                             <option value="S1" selected>Detail</option>
                                             <option value="S2">Revisi</option>
                                             <option value="S3">Approval</option>
+                                            <option value="S4">Approval Perubahan</option>
                                         </select>
                                     </div>
                                 </div>
@@ -413,7 +414,7 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2" style="border-bottom: 1px solid rgb(253 230 138 / var(--tw-border-opacity, 1)); padding-bottom: 10px;">
                                     <!--! BEGIN: [mail-editor-action-left] !-->
                                     <div class="d-flex align-items-center">
-                                        <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">TPAKD Provinsi Papua Tahun 2026</h4> <div class="badge badge-detail">V1 Latest</div>&nbsp;&nbsp;<div class="badge bg-danger" style="font-size: 15px;">Perlu Revisi</div>
+                                        <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">TPAKD Provinsi Papua Tahun 2026</h4> <div class="badge badge-detail">V1</div>&nbsp;&nbsp;<div class="badge bg-danger" style="font-size: 15px;">Perlu Revisi</div>
                                     </div>
                                     <!--! BEGIN: [mail-editor-action-right] !-->
                                     <div class="d-flex align-items-center"></div>
@@ -701,7 +702,7 @@
                                 <div class="d-flex align-items-center justify-content-between mb-2" style="border-bottom: 1px solid rgb(253 230 138 / var(--tw-border-opacity, 1)); padding-bottom: 10px;">
                                     <!--! BEGIN: [mail-editor-action-left] !-->
                                     <div class="d-flex align-items-center">
-                                        <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">TPAKD Provinsi Papua Tahun 2026</h4> <div class="badge badge-detail">V1 Latest</div>&nbsp;&nbsp;<div class="badge bg-warning" style="font-size: 15px;">Menunggu Persetujuan</div>
+                                        <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">TPAKD Provinsi Papua Tahun 2026</h4> <div class="badge badge-detail">V1</div>&nbsp;&nbsp;<div class="badge bg-warning" style="font-size: 15px;">Menunggu Persetujuan</div>
                                     </div>
                                     <!--! BEGIN: [mail-editor-action-right] !-->
                                     <div class="d-flex align-items-center"></div>
@@ -710,7 +711,7 @@
                                 <div class="row" style="margin-top: 20px;">
                                     <div class="col-md-6">
                                         <div class="d-flex align-items-center">
-                                            <div class="badge badge-detail" style="margin-right: 10px;">
+                                            <div class="badge badge-detail" style="margin-right: 10px; ">
                                                 <i class="fa-regular fa-file"></i>
                                                 Dokumen RKPD :
                                             </div>
@@ -726,7 +727,7 @@
                                             <a href="#">Dokumen Pengesahan Provinsi Papua.PDF</a>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
 
                             </div>
                         </div>
@@ -974,7 +975,310 @@
                                     <!--! BEGIN: [mail-editor-action-right] !-->
                                     <div class="d-flex align-items-center">
                                         <button href="buat-laporan-rencana.html" class="btn btn-secondary">Simpan Draft Tanggapan</button>&nbsp;&nbsp;
-                                        <a href="laporan-rencana.html" class="btn btn-success">Kirim Tanggapan</a>
+                                        <!-- <a class="dropdown-item btn btn-success" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum">
+                                            Kirim Laporan
+                                        </a> -->
+                                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum" class="btn btn-success">Kirim Tanggapan</a>
+                                        <!-- <a href="laporan-rencana.html" class="btn btn-danger">Berikan Revisi</a>&nbsp;&nbsp; -->
+                                        <!-- <a href="laporan-rencana.html" class="btn btn-success">Setujui Laporan</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="S4" style="display: none;">
+
+                        <div class="card stretch stretch-full" style="border: 1px solid rgb(253 230 138 / var(--tw-border-opacity, 1));">
+                            <div class="card-body">
+
+                                <div class="d-flex align-items-center justify-content-between mb-2" style="border-bottom: 1px solid rgb(253 230 138 / var(--tw-border-opacity, 1)); padding-bottom: 10px;">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">TPAKD Provinsi Papua Tahun 2026</h4> <div class="badge badge-detail">V2</div>&nbsp;&nbsp;<div class="badge bg-warning" style="font-size: 15px;">Menunggu Persetujuan Perubahan</div>
+                                    </div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center"></div>
+                                </div>
+
+                                <div class="row" style="margin-top: 20px; border-bottom: 1px solid rgb(253 230 138 / var(--tw-border-opacity, 1)); padding-bottom: 20px; margin-bottom: 20px;">
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-detail" style="margin-right: 10px; ">
+                                                <i class="fa-regular fa-file"></i>
+                                                Dokumen RKPD :
+                                            </div>
+                                            <a href="#">Dokumen RKPD Provinsi Papua.PDF</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-detail" style="margin-right: 10px;">
+                                                <i class="fa-regular fa-file"></i>
+                                                Dokumen Pengesahan :
+                                            </div>
+                                            <a href="#">Dokumen Pengesahan Provinsi Papua.PDF</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="" style="margin-top: 8px; color: rgb(146 64 14 / var(--tw-text-opacity, 1)); margin-right: 10px;">Alasan Pengajuan Perubahan</h4>
+
+                                <div class="form-group">
+                                    <!-- <label for="InvoiceLabel" class="form-label" style="font-size: 20px !important;">Alasan Pengajuan Perubahan</label> -->
+                                    <textarea class="form-control" placeholder="Inputkan Alasan Pengajuan Perubahan progra kerja" style="min-height: 180px !important;" readonly>Perlu penyesuaian pada target program kerja Agen Laku Pandai</textarea>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Program kerja 1-->
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+
+                                <div class="badge bg-primary" style="font-size: 15px;">Program kerja #1</div>
+
+                                <hr>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 class="mb-4">Rincian Program Kerja</h4>
+
+                                        <h6>Program SimPel di Provinsi Papua</h6>
+                                        <table class="table-detail mb-1">
+                                            <tr>
+                                                <td><b>Tema Program Kerja</b></td>
+                                                <td> : </td>
+                                                <td>Papua Kuat Indonesia Sehat</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Jenis Program Kerja</b></td>
+                                                <td> : </td>
+                                                <td>Simpanan Pelajar (SimPel)</td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="badge bg-light text-dark mb-2"><b>Kategori Program Kerja : </b><span style="font-weight: 400;">Konvensional, Syariah</span></div><br>
+                                        <div class="badge bg-light text-dark mb-3"><b>Sasaran Prioritas : </b><span style="font-weight: 400;">Pelajar/Mahasiswa, Masyarakat Umum</span></div>
+
+                                        <div style="border-left: 2px solid rgb(252 211 77 / var(--tw-border-opacity, 1)); padding-left: 8px;">
+                                            <h5 class="mb-1" style="color: rgb(107 114 128 / var(--tw-text-opacity, 1))">Keterangan program kerja</h5>
+                                            <p style="text-align: justify;">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, 
+                                                the librarian at St Bride Printing Library in London, 
+                                                took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 class="mb-4">Target Program Yang Dipilih</h4>
+                                        
+                                        <p style="font-size: 13px; font-weight: 800; margin-bottom: 5px !important; color: #283c50;">Peningkatan Literasi keuangan</p>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Jumlah Kegiatan</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>10</b>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Jumlah Peserta</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>1000 Orang</b>
+                                            </div>
+                                        </div>
+
+                                        <hr style="margin: 15px auto !important;">
+
+                                        <p style="font-size: 13px; font-weight: 800; margin-bottom: 5px !important; color: #283c50;">Optimalisasi Produk dan Layanan - Produk Tabungan</p>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Total Nasabah</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>100</b>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Total Nominal Tabungan</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>Rp 100.000.000</b>
+                                            </div>
+                                        </div>
+
+                                        <hr style="margin: 15px auto !important;">
+
+                                        <p style="font-size: 13px; font-weight: 800; margin-bottom: 5px !important; color: #283c50;">Penguatan Infrastruktur - Penerbitan Produk/Kebijakan, Lainnya</p>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Presentase yang dilakukan</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>100 %</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <hr>
+
+                                <h4 class="mb-4">Tanggapan Laporan</h4>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Status Tanggapan Program kerja</label>
+                                            <select class="form-control">
+                                                <option selected disabled>-- Pilih Status --</option>
+                                                <option>OK</option>
+                                                <option>Revisi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Persetujuan Laporan (Sekretariat TPAKD Provinsi)</label>
+                                            <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Laporan (Sekretariat Pusat)</label>
+                                            <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--Program kerja 1 End-->
+
+                        <!--Program kerja 2-->
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+
+                                <div class="badge bg-primary" style="font-size: 15px;">Program kerja #2</div>
+
+                                <hr>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 class="mb-4">Rincian Program Kerja</h4>
+
+                                        <h6 class="mb-1">Program Agen Lakupandai di Provinsi Papua</h6>
+                                        <table class="table-detail mb-1">
+                                            <tr>
+                                                <td><b>Tema Program Kerja</b></td>
+                                                <td> : </td>
+                                                <td>Akses Keuangan Desa</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Jenis Program Kerja</b></td>
+                                                <td> : </td>
+                                                <td>Agen Laku Pandai</td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="badge bg-light text-dark mb-2"><b>Kategori Program Kerja : </b><span style="font-weight: 400;">Konvensional, Syariah</span></div><br>
+                                        <div class="badge bg-light text-dark mb-3"><b>Sasaran Prioritas : </b><span style="font-weight: 400;">UMKM</span></div>
+
+                                        <div style="border-left: 2px solid rgb(252 211 77 / var(--tw-border-opacity, 1)); padding-left: 8px;">
+                                            <h5 class="mb-1" style="color: rgb(107 114 128 / var(--tw-text-opacity, 1))">Keterangan program kerja</h5>
+                                            <p style="text-align: justify;">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, 
+                                                the librarian at St Bride Printing Library in London, 
+                                                took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 class="mb-4">Target Program Yang Dipilih</h4>
+
+                                        <p style="font-size: 13px; font-weight: 800; margin-bottom: 5px !important; color: #283c50;">Penguatan Infrastruktur - Titik Akses Keuangan</p>
+                                        <div class="d-flex align-items-center justify-content-between mb-2 terget">
+                                            <!--! BEGIN: [mail-editor-action-left] !-->
+                                            <div class="d-flex align-items-center">
+                                                <span>Jumlah Agen</span>
+                                            </div>
+                                            <!--! BEGIN: [mail-editor-action-right] !-->
+                                            <div class="d-flex align-items-center">
+                                                <b>100</b>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <h4 class="mb-4">Tanggapan Laporan</h4>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Status Tanggapan Program kerja</label>
+                                                <select class="form-control">
+                                                    <option selected disabled>-- Pilih Status --</option>
+                                                    <option>OK</option>
+                                                    <option>Revisi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Persetujuan Laporan (Sekretariat TPAKD Provinsi)</label>
+                                                <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Laporan (Sekretariat Pusat)</label>
+                                                <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--Program kerja 2 End-->
+
+                        <div class="card stretch stretch-full" style="margin-bottom: 100px;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <!--! BEGIN: [mail-editor-action-left] !-->
+                                    <div class="d-flex align-items-center"></div>
+                                    <!--! BEGIN: [mail-editor-action-right] !-->
+                                    <div class="d-flex align-items-center">
+                                        <button href="buat-laporan-rencana.html" class="btn btn-secondary">Simpan Draft Tanggapan</button>&nbsp;&nbsp;
+                                        <!-- <a class="dropdown-item btn btn-success" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum">
+                                            Kirim Laporan
+                                        </a> -->
+                                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Adendum" class="btn btn-success">Kirim Tanggapan</a>
                                         <!-- <a href="laporan-rencana.html" class="btn btn-danger">Berikan Revisi</a>&nbsp;&nbsp; -->
                                         <!-- <a href="laporan-rencana.html" class="btn btn-success">Setujui Laporan</a> -->
                                     </div>
@@ -1007,8 +1311,8 @@
                 </div> -->
                 <!--! BEGIN: [modal-body] !-->
                 <div class="modal-body p-0 p-4">
-                    <h3 class="d-flex flex-column mb-3">Ajukan Perubahan Rencana (Adendum)</h3>
-                    <p style="font-size: 18px; align-items: stretch;">Mengajukan Adendum berarti merubah baseline target. Laporan Semester sebelumnya tetap aman di versi lama.</p>
+                    <h3 class="d-flex flex-column mb-3">Konfirmasi Kirim Tanggapan Laporan</h3>
+                    <p style="font-size: 18px; align-items: stretch;">Status laporan yang akan diberikan adalah <b class="badge bg-danger" style="font-size: 18px;">Perlu Revisi</b> apakah anda yakin untuk kirim tanggapan</p>
                     
                 </div>
                 <!--! BEGIN: [modal-footer] !-->
@@ -1018,7 +1322,7 @@
                     <!--! BEGIN: [mail-editor-action-right] !-->
                     <div class="d-flex align-items-center">
                         <a href="javascript:void(0)" class="btn btn-danger close-icon" data-bs-dismiss="modal" style="margin-right: 10px;">Batal</a>
-                        <a class="btn btn-success" href="buat-laporan-rencana.html">Ya, Lanjut</a>
+                        <a class="btn btn-success" href="laporan-rencana.html">Ya, Lanjut</a>
                     </div>
                 </div>
             </div>
@@ -1168,6 +1472,7 @@
             document.getElementById("S1").style.display = 'none';
             document.getElementById("S2").style.display = 'none';
             document.getElementById("S3").style.display = 'none';
+            document.getElementById("S4").style.display = 'none';
         }
 
         function unduhFunction() {
