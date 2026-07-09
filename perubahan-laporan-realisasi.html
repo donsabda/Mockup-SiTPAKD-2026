@@ -111,7 +111,7 @@
                 <div class="container-lg">
                     <div class="hstack justify-content-between mb-4">
                         <div>
-                            <h2 class="mb-1">Buat Laporan Realisasi Program Kerja</h2>
+                            <h2 class="mb-1">Revisi Laporan Realisasi Program Kerja</h2>
                             <!-- <p style="font-size: 18px;">Kelola dan pantau pengajuan laporan rencana <b>TPAKD Kabupaten Malang</b>.</p> -->
                         </div>
                         <div>
@@ -126,10 +126,10 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Tahun</label>
-                                        <select class="form-control">
+                                        <select class="form-control" disabled>
                                             <option selected disabled>-- Pilih Tahun --</option>
                                             <option>2025</option>
-                                            <option>2026</option>
+                                            <option selected>2026</option>
                                             <option>2027</option>
                                         </select>
                                     </div>
@@ -137,9 +137,9 @@
                                 <div class="col-md-6 mb-2">
                                     <div class="form-group">
                                         <label for="InvoiceLabel" class="form-label">Periode Pelaporan</label>
-                                        <select class="form-control" name="periode" onChange="getDropDown(this)">
+                                        <select class="form-control" name="periode" onChange="getDropDown(this)" disabled>
                                             <option selected>-- Pilih Periode Pelaporan --</option>
-                                            <option value="S1">Semester I</option>
+                                            <option value="S1" selected>Semester I</option>
                                             <option value="S2">Semester II</option>
                                         </select>
                                     </div>
@@ -149,13 +149,29 @@
                     </div>
                     <!--Program Tahun dan Semester-->
 
+                    <div class="card stretch stretch-full">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label" style="font-size: 20px !important;">Alasan Pengajuan Perubahan</label>
+                                        <textarea class="form-control" placeholder="Inputkan Alasan Pengajuan Perubahan progra kerja" style="min-height: 180px !important;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                     <!--Semester 1-->
-                    <div id="S1" style="display: none;">
+                    <div id="S1">
                         <!--Program kerja 1-->
                         <div class="card stretch stretch-full">
                             <div class="card-body">
 
-                                <div class="badge bg-primary mb-3" style="font-size: 18px;">Program kerja #1</div>
+                                <div class="badge bg-primary" style="font-size: 18px;">Program kerja #1</div>
+
+                                <hr>
 
                                 <h4 class="mb-3">Rincian Program Kerja</h4>
                                 
@@ -336,7 +352,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="InvoiceLabel" class="form-label" style="font-size: 15px !important;">Keterangan Pelaksanaan Program Kerja</label>
-                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px"></textarea>
+                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -346,10 +362,12 @@
                         <!--Program kerja 1 End-->
 
                         <!--Program kerja 2-->
-                        <div class="card stretch stretch-full">
+                        <div class="card stretch stretch-full" style="background-color: #FFFAF9 !important;">
                             <div class="card-body">
 
-                                <div class="badge bg-primary mb-3" style="font-size: 19px;">Program kerja #2</div>
+                                <div class="badge bg-primary" style="font-size: 15px;">Program kerja #2</div>
+
+                                <hr>
 
                                 <h4 class="mb-3">Rincian Program Kerja</h4>
                                 
@@ -412,7 +430,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="InvoiceLabel" class="form-label" style="font-size: 15px !important;">Keterangan Pelaksanaan Program Kerja</label>
-                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px"></textarea>
+                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -464,7 +482,7 @@
                             <div class="d-flex align-items-center"></div>
                             <!--! BEGIN: [mail-editor-action-right] !-->
                             <div class="d-flex align-items-center">
-                                <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
+                                <a href="laporan-realisasi.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
                                 <button class="btn btn-primary">Simpan dan Kirim</button>
                             </div>
                         </div>
@@ -473,11 +491,27 @@
 
                     <!--Semester 2-->
                     <div id="S2" style="display: none;">
+
                         <!--Program kerja 1-->
-                        <div class="card stretch stretch-full">
+                        <div class="card stretch stretch-full" style="background-color: #F2FFF2 !important;">
                             <div class="card-body">
 
-                                <div class="badge bg-primary mb-3" style="font-size: 18px;">Program kerja #1</div>
+                                <div class="badge bg-primary" style="font-size: 18px;">Program kerja #1</div> <div class="badge bg-success" style="font-size: 18px;">OK</div>
+
+                                <hr>
+
+                                <h4 class="mb-3">Tanggapan Laporan</h4>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Persetujuan Laporan (Sekretariat TPAKD Provinsi)</label>
+                                            <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
 
                                 <h4 class="mb-3">Rincian Program Kerja</h4>
                                 
@@ -513,7 +547,7 @@
                                                 <label for="InvoiceName" class="col-form-label">Jumlah Kegiatan</label>
                                             </div>
                                             <div class="col-md-8">
-                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="5">
+                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="5" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <p style="margin-bottom: 0px !important;">Target Laporan Rencana : <br><b class="b">10</b></p>
@@ -540,7 +574,7 @@
                                                 <label for="InvoiceName" class="col-form-label">Jumlah Peserta</label>
                                             </div>
                                             <div class="col-md-8">
-                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="500">
+                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="500" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <p style="margin-bottom: 0px !important;">Target Laporan Rencana : <br><b class="b">1.000</b></p>
@@ -572,7 +606,7 @@
                                                 <label for="InvoiceName" class="col-form-label">Total Nasabah</label>
                                             </div>
                                             <div class="col-md-8">
-                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50">
+                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <p style="margin-bottom: 0px !important;">Target Laporan Rencana : <br><b class="b">100</b></p>
@@ -599,7 +633,7 @@
                                                 <label for="InvoiceName" class="col-form-label">Total Nominal Tabungan</label>
                                             </div>
                                             <div class="col-md-8">
-                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50.000.000">
+                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50.000.000" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <p style="margin-bottom: 0px !important;">Target Laporan Rencana : <br><b class="b">100.000.000</b></p>
@@ -631,7 +665,7 @@
                                                 <label for="InvoiceName" class="col-form-label">Total Nominal Tabungan</label>
                                             </div>
                                             <div class="col-md-8">
-                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50">
+                                                <input type="text" class="form-control mb-3" id="InvoiceName" placeholder="Inputkan Capaian" value="50" readonly>
                                             </div>
                                             <div class="col-md-4">
                                                 <p style="margin-bottom: 0px !important;">Target Laporan Rencana : <br><b class="b">100 %</b></p>
@@ -658,13 +692,13 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="InvoiceLabel" class="form-label" style="font-size: 15px !important;">Upload Bukti pelaksanaan Program Kerja Semester II</label>
-                                            <input type="file" class="form-control" id="" value="">
+                                            <input type="file" class="form-control" id="" value="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="InvoiceLabel" class="form-label" style="font-size: 15px !important;">Keterangan Pelaksanaan Program Kerja</label>
-                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px"></textarea>
+                                            <textarea class="form-control" cols="10" rows="10" placeholder="Kendala/Tambahan Informasi" style="height: 100px" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -674,10 +708,25 @@
                         <!--Program kerja 1 End-->
 
                         <!--Program kerja 2-->
-                        <div class="card stretch stretch-full">
+                        <div class="card stretch stretch-full" style="background-color: #FFFAF9 !important;">
                             <div class="card-body">
 
-                                <div class="badge bg-primary mb-3" style="font-size: 18px;">Program kerja #2</div>
+                                <div class="badge bg-primary" style="font-size: 18px;">Program kerja #2</div> <div class="badge bg-danger" style="font-size: 18px;">Revisi</div>
+
+                                <hr>
+
+                                <h4 class="mb-3">Tanggapan Laporan</h4>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="InvoiceLabel" class="form-label" style="font-size: 16px !important;">Catatan Persetujuan Laporan (Sekretariat TPAKD Provinsi)</label>
+                                            <textarea class="form-control" placeholder="Berikan Catatan Program Kerja" style="min-height: 180px !important;" readonly="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
 
                                 <h4 class="mb-3">Rincian Program Kerja</h4>
                                 
@@ -795,7 +844,7 @@
                             <div class="d-flex align-items-center"></div>
                             <!--! BEGIN: [mail-editor-action-right] !-->
                             <div class="d-flex align-items-center">
-                                <a href="laporan-rencana.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
+                                <a href="laporan-realisasi.html" class="btn btn-secondary">Simpan Sebagai Draf</a>&nbsp;&nbsp;
                                 <button class="btn btn-primary">Simpan dan Kirim</button>
                             </div>
                         </div>
