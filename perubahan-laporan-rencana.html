@@ -254,11 +254,11 @@
 
                             <div class="card stretch stretch-full" style="border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); background-color: #F9FAFB;">
                                 <div class="card-body">
-                                    <div style="border-bottom: 1px solid #1E40AF;">
-                                        <h6 class="mb-2" style="color: #1E40AF;">Pilihan Target (Sesuai Kategori)</h6>
+                                    <div>
+                                        <h4 class="mb-2" style="color: #1E40AF;">Target Program Kerja</h4>
                                     </div>
                                     
-                                    <p style="font-size: 12px; font-weight:800; margin-top: 10px;">Centang (☑️) minimal 1 indikator target yang relevan dengan program ini:</p>
+                                    <p style="font-size: 15px; font-weight:800; margin-top: 10px;">Checklist Indikator target yang relevan dengan jenis program kerja yang dipilih</p>
 
                                     <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
@@ -411,7 +411,7 @@
                     <!--Program kerja 1 End-->
 
                     <!--Program kerja 2-->
-                    <div class="card stretch stretch-full" id="Tabel-excel">
+                    <div class="card stretch stretch-full">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
                                 <!--! BEGIN: [mail-editor-action-left] !-->
@@ -515,11 +515,11 @@
 
                             <div class="card stretch stretch-full" style="border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); background-color: #F9FAFB;">
                                 <div class="card-body">
-                                    <div style="border-bottom: 1px solid #1E40AF;">
-                                        <h6 class="mb-2" style="color: #1E40AF;">Pilihan Target (Sesuai Kategori)</h6>
+                                    <div>
+                                        <h4 class="mb-2" style="color: #1E40AF;">Target Program Kerja</h4>
                                     </div>
                                     
-                                    <p style="font-size: 12px; font-weight:800; margin-top: 10px;">Centang (☑️) minimal 1 indikator target yang relevan dengan program ini:</p>
+                                    <p style="font-size: 15px; font-weight:800; margin-top: 10px;">Checklist Indikator target yang relevan dengan jenis program kerja yang dipilih</p>
 
                                     <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
                                         <div class="form-check" style="margin-top: 15px;">
@@ -671,11 +671,272 @@
                     </div>
                     <!--Program kerja 2 End-->
 
+                    <!--Program kerja 3-->
+                    <div class="card stretch stretch-full" id="Tabel-excel" style="display: none;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <!--! BEGIN: [mail-editor-action-left] !-->
+                                <div class="d-flex align-items-center">
+                                    <div class="badge bg-primary" style="font-size: 18px;">Program kerja #3</div>
+                                </div>
+                                <!--! BEGIN: [mail-editor-action-right] !-->
+                                <div class="d-flex align-items-center">
+                                    <button onclick="unduhFunction()" class="btn btn-danger">
+                                        <i class="fa-solid fa-trash"></i>&nbsp;
+                                        Hapus
+                                    </button>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h4 class="mb-3">Rincian Program Kerja</h4>
+
+                            <div class="row">
+                                <!-- <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tahun</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Tahun --</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-12 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Tema Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Tema Program kerja">
+                                        <small class="form-text text-muted">Klik dropdown untuk gunakan tema yang pernah dibuat</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Jenis Program Kerja</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Jenis Program kerja --</option>
+                                            <option value="Kpmr">Kredit/Pembiayaan Melawan Rentenir (K/PMR)</option>
+                                            <option value="Simpel">Simpanan Pelajar (SimPel)</option>
+                                            <option value="Lakupandai">Agen Laku Pandai</option>
+                                            <option value="Eki">Ekosistem Keuangan Inklusi (EKI)</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Nama Program Kerja</label>
+                                        <input type="text" class="form-control" id="" value="" placeholder="Input Nama Program kerja">
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih" >
+                                            <option selected>Konvensional</option>
+                                            <option selected>Syariah</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Kategori Program Kerja</label>
+                                        <select class="form-control">
+                                            <option selected disabled>-- Pilih Kategori Program Kerja --</option>
+                                            <option>Konvensional</option>
+                                            <option>Syariah</option>
+                                            <option>Konvensional dan Syariah</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Sasaran Prioritas Program Kerja</label>
+                                        <select class="form-select form-control max-select" data-select2-selector="tag" multiple placeholder="Pilih">
+                                            <option>Pelajar/Mahasiswa</option>
+                                            <option>UMKM</option>
+                                            <option>Masyarakat Umum</option>
+                                            <option>Koperasi</option>
+                                            <option>Petani/Nelayan</option>
+                                            <option>Pekerja Migran</option>
+                                            <option>Penyandang Disabilitas</option>
+                                            <option>Masyarakat 3T</option>
+                                            <option>Aparatur Sipil Negara</option>
+                                            <option>Desa Wisata</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="InvoiceLabel" class="form-label">Keterangan / Definisi Singkat Program Kerja</label>
+                                        <textarea class="form-control" cols="10" rows="10" placeholder="Jelaskan secara singkat terkait rencana program kerja" style="height: 100px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card stretch stretch-full" style="border-color: rgb(229 231 235 / var(--tw-border-opacity, 1)); background-color: #F9FAFB;">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-2" style="color: #1E40AF;">Target Program Kerja</h4>
+                                    </div>
+                                    
+                                    <p style="font-size: 15px; font-weight:800; margin-top: 10px;">Checklist Indikator target yang relevan dengan jenis program kerja yang dipilih</p>
+
+                                    <div style="border-top: 1px solid #e5e7eb !important; border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="form-check" style="margin-top: 15px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <h6>Peningkatan Literasi keuangan</h6>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        Kegiatan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                                    <span class="input-group-text" id="basic-addon3">Orang</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="form-check" style="margin-top: 15px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <h6>Asistensi dan Pendampingan</h6>
+                                            </label>
+                                        </div>
+                                        <!-- <h6 style="margin-top: 15px;">Asistensi dan Pendampingan</h6> -->
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        Kegiatan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        jumlah Peserta
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                                    <span class="input-group-text" id="basic-addon3">Orang</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="form-check" style="margin-top: 15px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <h6>Optimalisasi Produk dan Layanan - Produk Tabungan</h6>
+                                            </label>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <!-- <h6 style="margin-top: 15px;">Optimalisasi Produk dan Layanan - Produk Tabungan</h6> -->
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        Total Nasabah
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        Jumlah Nominal Pembiayaan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon3">Rp</span>
+                                                    <input type="text" class="form-control" id="" value="" placeholder="Masukan Angka Target" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid #e5e7eb !important; padding-bottom: 10px; padding-top: 10px;">
+                                        <div class="form-check" style="margin-top: 15px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <h6>Penguatan Infrastruktur - Titik Akses Keuangan</h6>
+                                            </label>
+                                        </div>
+                                        <!-- <h6 style="margin-top: 15px;">Penguatan Infrastruktur - Penerbitan Produk/Kebijakan, Lainnya</h6> -->
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <div class="form-check" style="margin-top: 15px;">
+                                                    <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+                                                    <label class="form-check-label" for="defaultCheck1" style="font-weight: 700;">
+                                                        Jumlah Agen
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="" value="100" placeholder="Masukan Angka Target" readonly>
+                                                    <!-- <span class="input-group-text" id="basic-addon3">%</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Program kerja 3 End-->
+
                     <!--Tombol Tambah-->
-                    <!-- <button onclick="unduhFunction()" class="btn btn-light" style="width: 100%; border: 2px dashed rgb(147 197 253 / var(--tw-border-opacity, 1)); color: #2563EB; font-weight: 600; font-size: 15px;">
+                    <button onclick="unduhFunction()" class="btn btn-light" style="width: 100%; border: 2px dashed rgb(147 197 253 / var(--tw-border-opacity, 1)); color: #2563EB; font-weight: 600; font-size: 15px;">
                         <i class="fa-solid fa-plus"></i>&nbsp;
                         Tambah Program Kerja Baru
-                    </button> -->
+                    </button>
                     <!--Tombol Tambah End-->
 
                     <!--Upload Dokumen-->
